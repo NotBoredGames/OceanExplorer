@@ -13,7 +13,7 @@ public class PlayerSpawnLocationScript : MonoBehaviour
     void Start()
     {
         rect = GetComponent<RectTransform>();
-        rect.localPosition = new Vector3(0, Globals.ScrollDirection * spawnY, 0);
+        rect.localPosition = new Vector3(0, LevelScrollControlScript.ScrollDirection * spawnY, 0);
     }
 
     // Update is called once per frame
