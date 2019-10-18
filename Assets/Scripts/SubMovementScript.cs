@@ -17,15 +17,17 @@ public class SubMovementScript : MonoBehaviour
     float maxSpeed = 15.0f;
     [SerializeField]
     string subCenterString = "Sub_Center";
-
     [SerializeField]
+    BoxCollider2D subCollider;
+    
     float horizontal;
-    [SerializeField]
     float vertical;
     float moveLimiter = 0.7f;
 
     bool acceptHorizontal = true;
-    float vel = 0;
+    Vector2 oldVelocity = Vector2.zero;
+
+    float cappedY = 0;
 
     void Start()
     {
@@ -64,6 +66,8 @@ public class SubMovementScript : MonoBehaviour
         {
             body.velocity = body.velocity;
         }
+
+        oldVelocity = body.velocity;
     }
     private void LateUpdate()
     {
@@ -102,8 +106,54 @@ public class SubMovementScript : MonoBehaviour
             subCenterRect.localRotation = Quaternion.Euler(subCenterRect.localRotation.eulerAngles.x, subCenterRect.localRotation.eulerAngles.y, -submarineOBJ.transform.localRotation.eulerAngles.x);
         else
             subCenterRect.localRotation = Quaternion.Euler(subCenterRect.localRotation.eulerAngles.x, subCenterRect.localRotation.eulerAngles.y, submarineOBJ.transform.localRotation.eulerAngles.x);
+
+        if (cappedY != 0)
+        {
+            if (cappedY > 0)
+            {
+                rect.localPosition = new Vector3(rect.localPosition.x, Mathf.Clamp(rect.localPosition.y, 0, cappedY), rect.localPosition.z);
+            }
+            else if (cappedY < 0)
+            {
+                rect.localPosition = new Vector3(rect.localPosition.x, Mathf.Clamp(rect.localPosition.y, cappedY, 0), rect.localPosition.z);
+            }
+        }
+
+        RectTransform colliderRect = subCollider.gameObject.GetComponent<RectTransform>();
+        colliderRect.localRotation = Quaternion.Euler(colliderRect.localRotation.eulerAngles.x, colliderRect.localRotation.eulerAngles.y, 
+            -1 * Mathf.Sign(submarineOBJ.transform.forward.x) * submarineOBJ.transform.localRotation.eulerAngles.x);
+
+        if (cappedY > 0 && rect.localPosition.y < cappedY)
+        {
+            cappedY = 0;
+        }
+        else if (cappedY < 0 && rect.localPosition.y > cappedY)
+        {
+            cappedY = 0;
+        }
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (cappedY == 0)
+        {
+            if (collision.gameObject.name == "Top Boundary" || collision.gameObject.name == "Bottom Boundary")
+            {
+                cappedY = rect.localPosition.y;
+            }
+        }
+        /*
+        if (collision.gameObject.name == "Top Boundary" && cappedY == 0)
+        {
+            cappedY = rect.localPosition.y;
+        }
+        else if (collision.gameObject.name == "Bottom Boundary" && cappedY == 0)
+        {
+            cappedY = rect.localPosition.y;
+        }
+        */
+    }
+
     IEnumerator RotateSub(float startAngle, float targetAngle, float rotationTime)
     {
         float t = 0, currAngle = startAngle, gunPivotStartX = spriteGunPivot.localPosition.x,
@@ -125,5 +175,5 @@ public class SubMovementScript : MonoBehaviour
 
         acceptHorizontal = true;
     }
-    
+   
 }
