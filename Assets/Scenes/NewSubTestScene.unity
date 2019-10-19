@@ -659,6 +659,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3681560153993195279, guid: dd3ca43a721030440aa6d0abb023d566,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4719725964186053972, guid: dd3ca43a721030440aa6d0abb023d566,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -720,11 +725,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3142911216309196498, guid: dd3ca43a721030440aa6d0abb023d566,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3681560153993195279, guid: dd3ca43a721030440aa6d0abb023d566,
         type: 3}
       propertyPath: m_Layer
       value: 10
@@ -3406,6 +3406,7 @@ GameObject:
   - component: {fileID: 971849934}
   - component: {fileID: 971849936}
   - component: {fileID: 971849935}
+  - component: {fileID: 971849937}
   m_Layer: 5
   m_Name: 1x Scale Sub - Side
   m_TagString: submarineSprite
@@ -3470,6 +3471,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounds: {x: 368, y: 480}
   runSpeed: 20
+--- !u!114 &971849937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971849933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2169011bc5e0a634e88db00d73f74954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bomb: {fileID: 6954530006190748095, guid: e05a24476362e5e43a06c643e0b5a35a, type: 3}
+  bombCount: 3
 --- !u!1 &997451379
 GameObject:
   m_ObjectHideFlags: 0
