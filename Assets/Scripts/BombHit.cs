@@ -34,7 +34,8 @@ public class BombHit : MonoBehaviour
                Collider2D[] enemiesToDamage=Physics2D.OverlapCircleAll(gameObject.transform.position,attackRange,whatIsEnemies);
 			  for(int i = 0; i<enemiesToDamage.Length;i++)
 			  {
-				  //enemiesToDamage[i].GetComponent<GenericEnemyScript>().TakeDamage(damage);
+                //enemiesToDamage[i].GetComponent<GenericEnemyScript>().TakeDamage(damage);
+                Destroy(enemiesToDamage[i]);
 			  }
 			  Destroy(gameObject);
 		}
