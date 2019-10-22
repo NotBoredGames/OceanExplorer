@@ -39,7 +39,7 @@ public class SideGunLookAtScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Vector3 aimpointScreenSpace = Input.mousePosition;
         aimpointScreenSpace.z = _submarineCanvas.transform.position.z - _2dCanvasCamera.transform.position.z;
@@ -66,41 +66,45 @@ public class SideGunLookAtScript : MonoBehaviour
                 Vector3 lookPos = aimpointSubmarineSpace - gunMesh.transform.position;
 
                 //gunMesh.transform.LookAt(aimpointSubmarineSpace);
-                gunMesh.transform.forward = aimpointWorldSpace - Globals.FindDeepChild(_submarineSprite.transform, _gunPivot).GetComponent<RectTransform>().transform.position;
+                //gunMesh.transform.forward = aimpointWorldSpace - Globals.FindDeepChild(_submarineSprite.transform, _gunPivot).GetComponent<RectTransform>().transform.position;
+
+                Vector3 lookPosTest = aimpointWorldSpace - Globals.FindDeepChild(_submarineSprite.transform, _gunPivot).GetComponent<RectTransform>().transform.position;
+                float newX = Vector3.SignedAngle(_submarine.transform.forward, lookPosTest, _submarine.transform.right);
+                //Debug.Log(newX);
+
+                gunMesh.transform.localRotation = Quaternion.Euler(newX, 0, 0);
             }
         }
         
         if (_submarineSprite.GetComponent<Rigidbody2D>().velocity.y > 1)
         {
-            _submarine.transform.rotation = Quaternion.Euler(Mathf.SmoothDampAngle(_submarine.transform.rotation.eulerAngles.x, -30 + startRot.x, ref vel, 0.5f), 0 + startRot.y, 0 + startRot.z);
-            _submarineSprite.transform.Find(_submarineSpriteCenter).GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, -1 * startRot.y / Mathf.Abs(startRot.y) * _submarine.transform.rotation.eulerAngles.x);
+            //_submarine.transform.rotation = Quaternion.Euler(Mathf.SmoothDampAngle(_submarine.transform.rotation.eulerAngles.x, -30 + startRot.x, ref vel, 0.5f), 0 + startRot.y, 0 + startRot.z);
+            //_submarineSprite.transform.Find(_submarineSpriteCenter).GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, -1 * startRot.y / Mathf.Abs(startRot.y) * _submarine.transform.rotation.eulerAngles.x);
         }
         else if (_submarineSprite.GetComponent<Rigidbody2D>().velocity.y < -1)
         {
-            _submarine.transform.rotation = Quaternion.Euler(Mathf.SmoothDampAngle(_submarine.transform.rotation.eulerAngles.x, 30 + startRot.x, ref vel, 0.5f), 0 + startRot.y, 0 + startRot.z);
-            _submarineSprite.transform.Find(_submarineSpriteCenter).GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, -1 * startRot.y / Mathf.Abs(startRot.y) * _submarine.transform.rotation.eulerAngles.x);
+            //_submarine.transform.rotation = Quaternion.Euler(Mathf.SmoothDampAngle(_submarine.transform.rotation.eulerAngles.x, 30 + startRot.x, ref vel, 0.5f), 0 + startRot.y, 0 + startRot.z);
+            //_submarineSprite.transform.Find(_submarineSpriteCenter).GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, -1 * startRot.y / Mathf.Abs(startRot.y) * _submarine.transform.rotation.eulerAngles.x);
         }
         else
         {
-            _submarine.transform.rotation = Quaternion.Euler(Mathf.SmoothDampAngle(_submarine.transform.rotation.eulerAngles.x, 0 + startRot.x, ref vel, 0.25f), 0 + startRot.y, 0 + startRot.z);
-            _submarineSprite.transform.Find(_submarineSpriteCenter).GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, -1 * startRot.y / Mathf.Abs(startRot.y) * _submarine.transform.rotation.eulerAngles.x);
+            //_submarine.transform.rotation = Quaternion.Euler(Mathf.SmoothDampAngle(_submarine.transform.rotation.eulerAngles.x, 0 + startRot.x, ref vel, 0.25f), 0 + startRot.y, 0 + startRot.z);
+            //_submarineSprite.transform.Find(_submarineSpriteCenter).GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, -1 * startRot.y / Mathf.Abs(startRot.y) * _submarine.transform.rotation.eulerAngles.x);
         }
 
         if(Input.GetAxis("Horizontal") < 0)
         {
             //_submarine.transform.rotation = Quaternion.Euler(_submarine.transform.rotation.eulerAngles.x, -90, _submarine.transform.rotation.eulerAngles.z);
-            startRot = new Vector3(0, -90, 0);
-            RectTransform gpRect = Globals.FindDeepChild(_submarineSprite.transform, _gunPivot).GetComponent<RectTransform>();
-            gpRect.localPosition = new Vector3(-1 * Mathf.Abs(gpRect.localPosition.x), gpRect.localPosition.y, gpRect.localPosition.z);
-            //_submarineSprite.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
+            //startRot = new Vector3(0, -90, 0);
+            //RectTransform gpRect = Globals.FindDeepChild(_submarineSprite.transform, _gunPivot).GetComponent<RectTransform>();
+            //gpRect.localPosition = new Vector3(-1 * Mathf.Abs(gpRect.localPosition.x), gpRect.localPosition.y, gpRect.localPosition.z);
         }
         else if ((Input.GetAxis("Horizontal") > 0))
         {
             //_submarine.transform.rotation = Quaternion.Euler(_submarine.transform.rotation.eulerAngles.x, 90, _submarine.transform.rotation.eulerAngles.z);
-            startRot = new Vector3(0, 90, 0);
-            RectTransform gpRect = Globals.FindDeepChild(_submarineSprite.transform, _gunPivot).GetComponent<RectTransform>();
-            gpRect.localPosition = new Vector3(Mathf.Abs(gpRect.localPosition.x), gpRect.localPosition.y, gpRect.localPosition.z);
-            //_submarineSprite.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+            //startRot = new Vector3(0, 90, 0);
+            //RectTransform gpRect = Globals.FindDeepChild(_submarineSprite.transform, _gunPivot).GetComponent<RectTransform>();
+            //gpRect.localPosition = new Vector3(Mathf.Abs(gpRect.localPosition.x), gpRect.localPosition.y, gpRect.localPosition.z);
         }
     }
 
