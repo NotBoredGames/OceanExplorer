@@ -4,19 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - submarineSprite
   - Enemy
   - PlayAreaBoundary
   - PlayerBullet
+  - Environment
+  - SubmarineSprite
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  -
+  - 
   - Water
   - UI
-  -
-  -
+  - 
+  - 
   - Background
   - Submarine
   - OutlineSubmarine
@@ -25,22 +26,22 @@ TagManager:
   - PlayerBullet
   - PlayAreaBoundary
   - Player
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - Environment
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
