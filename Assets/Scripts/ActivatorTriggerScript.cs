@@ -27,9 +27,12 @@ public class ActivatorTriggerScript : MonoBehaviour
         triggeredOBJs.Add(collision.gameObject);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Object '" + collision.gameObject.name + "' w/ tag '" + collision.tag + "' exited '" + this.gameObject.name + "'");
-        triggeredOBJs.Remove(collision.gameObject);
+        Debug.Log("Object '" + other.gameObject.name + "' w/ tag '" + other.tag + "' exited '" + this.gameObject.name + "'");
+        triggeredOBJs.Remove(other.gameObject);
+
+        if(other.tag == "PlayerBullet")
+            Destroy(other.gameObject, 1);
     }
 }
