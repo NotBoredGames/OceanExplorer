@@ -9,10 +9,7 @@ public class SetOutlineColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (RandomSubAppearanceScript.outlineColor.Equals(Color.clear))
-            GetComponent<NicerOutline>().effectColor = Color.white;
-        else
-            GetComponent<NicerOutline>().effectColor = new Color (1, 1, 1, RandomSubAppearanceScript.outlineColor.a);
+        GetComponent<NicerOutline>().effectColor = new Color (1, 1, 1, RandomSubAppearanceScript.outlineColor.a);
     }
 
     // Update is called once per frame
