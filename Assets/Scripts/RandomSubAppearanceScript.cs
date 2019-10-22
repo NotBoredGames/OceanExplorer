@@ -68,9 +68,9 @@ public class RandomSubAppearanceScript : MonoBehaviour
 
         if (patternList.Count > 0)
         {
-            yield return new WaitForSeconds(1/32);
+            yield return new WaitForSeconds(1 / 32);
             int index = Random.Range(0, patternList.Count);
-            foreach(MeshFilter pattern in submarinePatterns)
+            foreach (MeshFilter pattern in submarinePatterns)
                 pattern.mesh = patternList[index];
         }
 

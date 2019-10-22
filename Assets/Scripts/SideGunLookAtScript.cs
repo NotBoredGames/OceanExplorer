@@ -36,7 +36,7 @@ public class SideGunLookAtScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Vector3 aimpointScreenSpace = Input.mousePosition;
         aimpointScreenSpace.z = _submarineCanvas.transform.position.z - _2dCanvasCamera.transform.position.z;
