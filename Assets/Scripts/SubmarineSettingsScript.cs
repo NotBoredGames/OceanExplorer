@@ -13,6 +13,14 @@ public class SubmarineSettingsScript : MonoBehaviour
     [SerializeField]
     float bulletSpeed = 50;
 
+    [BoxGroup("Turret Settings")]
+    [SerializeField]
+    int startingBulletDamage = 1;
+
+    [BoxGroup("Turret Settings")]
+    [SerializeField]
+    int currentBulletDamage;
+
     [BoxGroup("Mine Settings")]
     [SerializeField]
     int startingMines = 3;
@@ -32,6 +40,14 @@ public class SubmarineSettingsScript : MonoBehaviour
     [BoxGroup("Mine Settings")]
     [SerializeField]
     float mineSpeed = 30;
+
+    [BoxGroup("Mine Settings")]
+    [SerializeField]
+    int startingMineDamage = 5;
+
+    [BoxGroup("Mine Settings")]
+    [SerializeField]
+    int currentMineDamage;
 
     [BoxGroup("Other Settings")]
     [SerializeField]
@@ -86,6 +102,16 @@ public class SubmarineSettingsScript : MonoBehaviour
         return bulletSpeed;
     }
 
+    public void SetBulletDamage(int i)
+    {
+        currentBulletDamage = i;
+    }
+
+    public int GetBulletDamage()
+    {
+        return currentBulletDamage;
+    }
+
     public void SetMaxMines(int i)
     {
         maxMines = i;
@@ -114,6 +140,16 @@ public class SubmarineSettingsScript : MonoBehaviour
     public float GetMineDelay()
     {
         return mineDelay;
+    }
+
+    public void SetMineDamage(int i)
+    {
+        currentMineDamage = i;
+    }
+
+    public int GetMineDamage()
+    {
+        return currentMineDamage;
     }
 
     public void SetCurrentHP(int i)
