@@ -4,11 +4,29 @@ using UnityEngine;
 
 public class Globals : MonoBehaviour
 {
+    [SerializeField]
+    [Range(-1, 1)]
+    int setScrollDirection = 1;
+
+    [SerializeField]
+    AnimationCurve setScrollX;
+
+    [SerializeField]
+    AnimationCurve setScrollY;
+
+    public static int ScrollDirection { get; set; }
+    public static AnimationCurve ScrollX;
+    public static AnimationCurve ScrollY;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (setScrollDirection == 0)
+            setScrollDirection = (Random.Range(-1, 1) == 0) ? 1 : -1;
+
+        ScrollDirection = setScrollDirection;
+        ScrollX = setScrollX;
+        ScrollY = setScrollY;
     }
 
     // Update is called once per frame
@@ -19,17 +37,17 @@ public class Globals : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.R))
             Application.LoadLevel(Application.loadedLevel);
-
-        if (Input.GetKeyUp(KeyCode.P))
-            Debug.Break();
     }
 
-    /// <summary>
-    /// FindDeepChild: returns a child that is some descendent of the parent object
-    /// </summary>
-    /// <param name="aParent">The object the target is a descendent of [Type: Transform]</param>
-    /// <param name="aName">The name of the target [Type: string]</param>
-    /// <returns>The transform of the target object</returns>
+    public static float GetScrollSpeedX(float t)
+    {
+        return ScrollX.Evaluate(t);
+    }
+
+    public static float GetScrollSpeedY(float t)
+    {
+        return ScrollY.Evaluate(t);
+    }
 
     public static Transform FindDeepChild(Transform aParent, string aName)
     {

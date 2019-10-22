@@ -37,7 +37,7 @@ public class EnemyBulletScript : MonoBehaviour
         {
             if (rect.localPosition.y < bounds.y && rect.localPosition.y > -bounds.y)
             {
-                if (LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad) != 0)
+                if (Globals.GetScrollSpeedY(Time.timeSinceLevelLoad) != 0)
                 {
                     GameObject spawnedBullet = Instantiate(bullet, this.transform.parent);
                     spawnedBullet.GetComponent<RectTransform>().localPosition = rect.localPosition;
