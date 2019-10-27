@@ -15,13 +15,9 @@ public class EnemyFollowPlayer : MonoBehaviour
 
     void Update()
     {
-
-
-
         //rotate to look at the player
         transform.LookAt(target.position);
         transform.Rotate(new Vector3(0, -90, 0), Space.Self);//correcting the original rotation
-
 
         //move towards the player
         if (Vector3.Distance(transform.position, target.position) > 1f)
