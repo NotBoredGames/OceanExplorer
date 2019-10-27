@@ -27,9 +27,9 @@ TagManager:
   - PlayAreaBoundary
   - Player
   - Environment
-  - 
-  - 
-  - 
+  - FieldOfViewMask
+  - InvisibleSpotlight
+  - VisibleSpotlight
   - 
   - 
   - 
@@ -46,6 +46,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer
+  - name: Excluded From Darkness
     uniqueID: 2300299709
     locked: 0
