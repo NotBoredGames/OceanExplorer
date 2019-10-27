@@ -37,6 +37,11 @@ public class Globals : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.R))
             Application.LoadLevel(Application.loadedLevel);
+
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            Debug.Break();
+        }
     }
 
     public static float GetScrollSpeedX(float t)
