@@ -6,9 +6,12 @@ public class FieldOfViewSpriteScript : MonoBehaviour
 {
     [SerializeField]
     RenderTexture renderTexture;
+    
+    [SerializeField]
+    bool useSpriteRenderer = false;
 
     [SerializeField]
-    Sprite renderSprite;
+    bool useSpriteMask = false;
 
     SpriteRenderer spriteRenderer;
     SpriteMask spriteMask;
@@ -24,14 +27,16 @@ public class FieldOfViewSpriteScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
-        //spriteRenderer.sprite = Sprite.Create(ToTexture2D(renderTexture), 
-            //new Rect(0, 0, renderTexture.width, renderTexture.height),
-            //new Vector2(0.5f, 0.5f));
-        spriteMask.sprite = Sprite.Create(ToTexture2D(renderTexture),
-            new Rect(0, 0, renderTexture.width, renderTexture.height),
-            new Vector2(0.5f, 0.5f), 1);
+        if (useSpriteRenderer)
+            spriteRenderer.sprite = Sprite.Create(ToTexture2D(renderTexture), 
+                new Rect(0, 0, renderTexture.width, renderTexture.height),
+                new Vector2(0.5f, 0.5f), 1, 0, SpriteMeshType.FullRect);
+        if (useSpriteMask)
+            spriteMask.sprite = Sprite.Create(ToTexture2D(renderTexture),
+                new Rect(0, 0, renderTexture.width, renderTexture.height),
+                new Vector2(0.5f, 0.5f), 1, 0, SpriteMeshType.FullRect);
     }
 
     Texture2D ToTexture2D(RenderTexture rTex)
