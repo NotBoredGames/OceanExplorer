@@ -58,7 +58,7 @@ public class FieldOfViewScript : MonoBehaviour
 
     [HideInInspector]
     public Vector3 position;
-    RectTransform gunPivotRect;
+    Transform gunPivotRect;
 
     List<GameObject> visibleCopies = new List<GameObject>();
 
@@ -69,7 +69,7 @@ public class FieldOfViewScript : MonoBehaviour
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
 
-        gunPivotRect = gunPivot.gameObject.GetComponent<RectTransform>();
+        gunPivotRect = gunPivot.gameObject.GetComponent<Transform>();
 
         if (useTurretAim && lookAtScript == null)
         {
@@ -323,7 +323,7 @@ public class FieldOfViewScript : MonoBehaviour
 
                 GameObject obj = transform.gameObject;
                 GameObject copy = Instantiate(obj, copyParent);
-                copy.GetComponent<RectTransform>().position = obj.GetComponent<RectTransform>().position;
+                copy.GetComponent<Transform>().position = obj.GetComponent<Transform>().position;
 
                 copy.name = "Visible Target Copy - " + obj.name;
                 copy.layer = copyLayer;
