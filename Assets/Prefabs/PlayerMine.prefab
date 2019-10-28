@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7730014012898147213}
   - component: {fileID: -7430939912309539818}
   - component: {fileID: 7205453259046756637}
+  - component: {fileID: 3232791623050500241}
   m_Layer: 13
   m_Name: PlayerMine
   m_TagString: PlayerBullet
@@ -123,3 +124,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &3232791623050500241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7730014012898147218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3e46a53858a344ea4b8a6b337b5cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subSettings: {fileID: 0}
+  explosionRadius: 10
