@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/NewSubTestScene.unity
+    path: Assets/Scenes/SpotlightTest.unity
     guid: 0ca0a937d3b1ed14b8b89163aacf2514
   m_configObjects: {}

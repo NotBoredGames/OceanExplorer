@@ -4467,6 +4467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggeredOBJs: []
+  scriptsToActivate: []
+  scriptsToDeactivate: []
 --- !u!224 &478138063 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5066599549043539547, guid: fde89a89f6baae34dbc55041ec4e5429,
@@ -5399,7 +5401,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 557056
+    m_Bits: 819200
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -10110,7 +10112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1147102601
 Camera:
   m_ObjectHideFlags: 0
@@ -12537,7 +12539,7 @@ RectTransform:
   m_GameObject: {fileID: 1482256216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 709922170}
   m_RootOrder: 4
@@ -16733,6 +16735,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3862539566844736321, guid: 31536c87fbcaa404fae80180b189e6cd,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1187806525}
     - target: {fileID: 3862539566844736323, guid: 31536c87fbcaa404fae80180b189e6cd,
         type: 3}
       propertyPath: m_SortingOrder
@@ -16743,11 +16750,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3862539566844736321, guid: 31536c87fbcaa404fae80180b189e6cd,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1187806525}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31536c87fbcaa404fae80180b189e6cd, type: 3}
 --- !u!224 &3862539566111014457 stripped
