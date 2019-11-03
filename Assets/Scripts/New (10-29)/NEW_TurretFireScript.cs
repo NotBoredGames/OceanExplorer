@@ -36,7 +36,7 @@ public class NEW_TurretFireScript : MonoBehaviour
         if (aimScript == null)
         {
             Debug.Break();
-            Debug.LogError("No SideGunLookAtScript attached to submarineOBJ!");
+            Debug.LogError("[[" + this.name + "]] No TurretAimtScript attached to submarineOBJ!");
         }
 
         bulletSpeed = subSettings.GetBulletSpeed();
