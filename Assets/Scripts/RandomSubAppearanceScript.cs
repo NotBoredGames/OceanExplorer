@@ -17,6 +17,9 @@ public class RandomSubAppearanceScript : MonoBehaviour
     Material _paintMat;
 
     [SerializeField]
+    bool setSubPattern = true;
+
+    [SerializeField]
     MeshFilter[] submarinePatterns;
 
     [SerializeField]
@@ -30,7 +33,8 @@ public class RandomSubAppearanceScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Randomize());
+        if (setSubPattern)
+            StartCoroutine(Randomize());
     }
 
     // Update is called once per frame
@@ -66,7 +70,7 @@ public class RandomSubAppearanceScript : MonoBehaviour
 
         _paintMat.color = new Color(paintR, paintG, paintB, 1);
 
-        if (patternList.Count > 0)
+        if (patternList.Count > 0 && setSubPattern)
         {
             yield return new WaitForSeconds(1 / 32);
             int index = Random.Range(0, patternList.Count);

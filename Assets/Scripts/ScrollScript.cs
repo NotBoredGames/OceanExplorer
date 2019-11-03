@@ -20,6 +20,7 @@ public class ScrollScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rect.localPosition += new Vector3(Globals.ScrollDirection * scrollRate * Globals.GetScrollSpeedX(Time.timeSinceLevelLoad), Globals.ScrollDirection * scrollRate * Globals.GetScrollSpeedY(Time.timeSinceLevelLoad), 0);
+        rect.localPosition += new Vector3(LevelScrollControlScript.ScrollDirection * scrollRate * LevelScrollControlScript.GetScrollSpeedX(Time.timeSinceLevelLoad), 
+            LevelScrollControlScript.ScrollDirection * scrollRate * LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad), 0);
     }
 }

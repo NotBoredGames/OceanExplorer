@@ -75,7 +75,7 @@ public class PlayerMineDropScript : MonoBehaviour
             mine_r2d.velocity = new Vector2(0, -mineSpeed);
 
             PlayerMineCollisionScript colScript = newMine.GetComponent<PlayerMineCollisionScript>();
-            colScript.SetSubSettings(subSettings);
+            colScript.SetMineDamage(subSettings);
 
             yield return new WaitForSeconds(mineDelay);
             canFire = true;

@@ -6,6 +6,7 @@ using UnityEditor;
 [CustomEditor(typeof(FieldOfViewScript))]
 public class FieldOfViewEditor : Editor
 {
+    
     void OnSceneGUI()
     {
         FieldOfViewScript fovScript = (FieldOfViewScript)target;
@@ -50,4 +51,5 @@ public class FieldOfViewEditor : Editor
             Handles.DrawAAPolyLine(2, new Vector3[] { fovScript.position, t.position });
         }
     }
+    
 }

@@ -13,7 +13,7 @@ public class DestroyOutOfBoundsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scrollDirection = Globals.ScrollDirection;
+        scrollDirection = LevelScrollControlScript.ScrollDirection;
         rect = GetComponent<RectTransform>();
     }
 

@@ -31,7 +31,7 @@ public class EnemySpawnScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int scrollDirection = Globals.ScrollDirection;
+        int scrollDirection = LevelScrollControlScript.ScrollDirection;
         StartCoroutine(GenerateEnemiesRoutine(scrollDirection));
 
     }

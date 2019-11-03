@@ -62,6 +62,6 @@ public class ActivatorTriggerScript : MonoBehaviour
         triggeredOBJs.Remove(other.gameObject);
 
         if(other.tag == "PlayerBullet")
-            Destroy(other.gameObject, 1);
+            Destroy(other.gameObject, 0);
     }
 }
