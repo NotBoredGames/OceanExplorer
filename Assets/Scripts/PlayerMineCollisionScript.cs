@@ -41,7 +41,9 @@ public class PlayerMineCollisionScript : MonoBehaviour
         {
             if (target.tag == "Enemy")
             {
-                DrawCircle(target.ClosestPoint(_point), 1, Color.red, 10, 4);
+                DrawCircle(target.ClosestPoint(_point), 0.5f, Color.red, 10, 4);
+                DrawCircle(target.transform.position, 1, Color.red, 10, 8);
+                Debug.DrawLine(target.ClosestPoint(_point), target.transform.position, Color.red, 10);
                 Destroy(target.gameObject);
             }
         }
@@ -60,6 +62,8 @@ public class PlayerMineCollisionScript : MonoBehaviour
             if (target.tag == "Enemy")
             {
                 DrawCircle(target.ClosestPoint(this.transform.position), 1, Color.red, 10, 4);
+                DrawCircle(target.transform.position, 1, Color.red, 10, 8);
+                Debug.DrawLine(target.ClosestPoint(this.transform.position), target.transform.position, Color.red, 10);
                 Destroy(target.gameObject);
             }
         }

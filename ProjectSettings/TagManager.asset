@@ -20,16 +20,16 @@ TagManager:
   - 
   - Background
   - Submarine
-  - OutlineSubmarine
+  - Section Header
   - Enemy
   - EnemyBullet
   - PlayerBullet
   - PlayAreaBoundary
   - Player
   - Environment
-  - FieldOfViewMask
-  - InvisibleSpotlight
-  - VisibleSpotlight
+  - 
+  - 
+  - 
   - ScriptActivator
   - 
   - 
@@ -45,7 +45,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Excluded From Darkness
-    uniqueID: 2300299709
     locked: 0

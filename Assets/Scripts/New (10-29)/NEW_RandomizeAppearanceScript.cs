@@ -28,10 +28,10 @@ public class NEW_RandomizeAppearanceScript : MonoBehaviour
     public static Color outlineColor { get; set; }
 
     // Start is called before the first frame update
-    void Start()
+    // Start uneffected by Script Execution Order, so we use Awake() instead
+    void Awake()
     {
-        if (setSubPattern)
-            StartCoroutine(Randomize());
+        StartCoroutine(Randomize());
     }
 
     // Update is called once per frame
