@@ -79,8 +79,9 @@ public class NEW_TurretFireScript : MonoBehaviour
 
             Vector3 aimVector = aimScript.GetAimVector().normalized;
 
-            newBullet.transform.position = this.transform.position + turretReference.localPosition;
-            newBullet.transform.position += turretOffset * aimVector;
+            //newBullet.transform.position = this.transform.position + turretReference.position;
+            //newBullet.transform.position += turretOffset * aimVector;
+            newBullet.transform.position = turretReference.position + turretOffset * aimVector;
 
             Rigidbody2D bullet_r2d = newBullet.GetComponent<Rigidbody2D>();
             bullet_r2d.velocity = bulletSpeed * aimVector;

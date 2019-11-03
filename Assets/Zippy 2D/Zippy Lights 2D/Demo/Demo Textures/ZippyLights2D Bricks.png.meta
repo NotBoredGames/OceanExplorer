@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: 3f2d8268e9e047b44bddf82cf98e5c49
+timeCreated: 1507973584
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet_bricks_0
+    21300002: spritesheet_bricks_1
+    21300004: spritesheet_bricks_2
+    21300006: spritesheet_bricks_3
+    21300008: spritesheet_bricks_4
+    21300010: spritesheet_bricks_5
+    21300012: spritesheet_bricks_6
+    21300014: spritesheet_bricks_7
+    21300016: spritesheet_bricks_8
+    21300018: spritesheet_bricks_9
+    21300020: spritesheet_bricks_10
+    21300022: spritesheet_bricks_11
+    21300024: spritesheet_bricks_12
+    21300026: spritesheet_bricks_13
+    21300028: spritesheet_bricks_14
+    21300030: spritesheet_bricks_15
+    21300032: spritesheet_bricks_16
+    21300034: spritesheet_bricks_17
+    21300036: spritesheet_bricks_18
+    21300038: spritesheet_bricks_19
+    21300040: spritesheet_bricks_20
+    21300042: spritesheet_bricks_21
+    21300044: spritesheet_bricks_22
+    21300046: spritesheet_bricks_23
+    21300048: spritesheet_bricks_24
+    21300050: spritesheet_bricks_25
+    21300052: spritesheet_bricks_26
+    21300054: spritesheet_bricks_27
+    21300056: spritesheet_bricks_28
+    21300058: spritesheet_bricks_29
+    21300060: spritesheet_bricks_30
+    21300062: spritesheet_bricks_31
+    21300064: spritesheet_bricks_32
+    21300066: spritesheet_bricks_33
+    21300068: spritesheet_bricks_34
+    21300070: spritesheet_bricks_35
+    21300072: spritesheet_bricks_36
+    21300074: spritesheet_bricks_37
+    21300076: spritesheet_bricks_38
+    21300078: spritesheet_bricks_39
+    21300080: spritesheet_bricks_40
+    21300082: spritesheet_bricks_41
+    21300084: spritesheet_bricks_42
+    21300086: spritesheet_bricks_43
+    21300088: spritesheet_bricks_44
+    21300090: spritesheet_bricks_45
+    21300092: spritesheet_bricks_46
+    21300094: spritesheet_bricks_47
+    21300096: spritesheet_bricks_48
+    21300098: spritesheet_bricks_49
+    21300100: spritesheet_bricks_50
+    21300102: spritesheet_bricks_51
+    21300104: spritesheet_bricks_52
+    21300106: spritesheet_bricks_53
+    21300108: spritesheet_bricks_54
+    21300110: spritesheet_bricks_55
+    21300112: spritesheet_bricks_56
+    21300114: spritesheet_bricks_57
+    21300116: spritesheet_bricks_58
+    21300118: spritesheet_bricks_59
+    21300120: spritesheet_bricks_60
+    21300122: spritesheet_bricks_61
+    21300124: spritesheet_bricks_62
+    21300126: spritesheet_bricks_63
+    21300128: spritesheet_bricks_64
+    21300130: spritesheet_bricks_65
+    21300132: spritesheet_bricks_66
+    21300134: spritesheet_bricks_67
+    21300136: spritesheet_bricks_68
+    21300138: spritesheet_bricks_69
+    21300140: spritesheet_bricks_70
+    21300142: spritesheet_bricks_71
+    21300144: spritesheet_bricks_72
+    21300146: spritesheet_bricks_73
+    21300148: spritesheet_bricks_74
+    21300150: spritesheet_bricks_75
+    21300152: spritesheet_bricks_76
+    21300154: spritesheet_bricks_77
+    21300156: spritesheet_bricks_78
+    21300158: spritesheet_bricks_79
+    21300160: spritesheet_bricks_80
+    21300162: spritesheet_bricks_81
+    21300164: spritesheet_bricks_82
+    21300166: spritesheet_bricks_83
+    21300168: spritesheet_bricks_84
+    21300170: spritesheet_bricks_85
+    21300172: spritesheet_bricks_86
+    21300174: spritesheet_bricks_87
+    21300176: spritesheet_bricks_88
+    21300178: spritesheet_bricks_89
+    21300180: spritesheet_bricks_90
+    21300182: spritesheet_bricks_91
+    21300184: spritesheet_bricks_92
+    21300186: spritesheet_bricks_93
+    21300188: spritesheet_bricks_94
+    21300190: spritesheet_bricks_95
+    21300192: spritesheet_bricks_96
+    21300194: spritesheet_bricks_97
+    21300196: spritesheet_bricks_98
+    21300198: spritesheet_bricks_99
+    21300200: spritesheet_bricks_100
+    21300202: spritesheet_bricks_101
+    21300204: spritesheet_bricks_102
+    21300206: spritesheet_bricks_103
+    21300208: spritesheet_bricks_104
+    21300210: spritesheet_bricks_105
+    21300212: Giraffe
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 0
+    mipMapFadeDistanceEnd: 7
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spritesheet_bricks_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 192
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 31.5}
+        - {x: -96, y: -31.5}
+        - {x: 96, y: -31.5}
+        - {x: 96, y: 28.5}
+        - {x: 95, y: 31.5}
+    - name: spritesheet_bricks_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -32}
+        - {x: 64, y: -32}
+        - {x: 64, y: 32}
+    - name: spritesheet_bricks_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline:
+      - - {x: -28, y: 32}
+        - {x: -32, y: 28}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 28}
+        - {x: 28, y: 32}
+    - name: spritesheet_bricks_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 192
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 31.5}
+        - {x: -96, y: -31.5}
+        - {x: 96, y: -31.5}
+        - {x: 96, y: 28.5}
+        - {x: 95, y: 31.5}
+    - name: spritesheet_bricks_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61, y: 31.5}
+        - {x: -64, y: 28.5}
+        - {x: -64, y: -31.5}
+        - {x: 64, y: -31.5}
+        - {x: 64, y: 28.5}
+        - {x: 63, y: 31.5}
+    - name: spritesheet_bricks_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 31.5}
+        - {x: -32, y: 27.5}
+        - {x: -32, y: -31.5}
+        - {x: 32, y: -31.5}
+        - {x: 32, y: 27.5}
+        - {x: 28, y: 31.5}
+    - name: Giraffe
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 195
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 27}
+        - {x: -28, y: 27}
+        - {x: -28, y: -10}
+        - {x: -23, y: -27}
+        - {x: 24, y: -27}
+        - {x: 28, y: -5}
+        - {x: 28, y: 22}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
