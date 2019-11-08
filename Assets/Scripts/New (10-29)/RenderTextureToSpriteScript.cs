@@ -37,9 +37,9 @@ public class RenderTextureToSpriteScript : MonoBehaviour
         Texture2D tex = new Texture2D(rTex.width, rTex.height, TextureFormat.RGBA32, true);
         RenderTexture.active = rTex;
         tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
-        tex.Apply();
         tex.filterMode = spriteFilterMode;
         tex.wrapMode = TextureWrapMode.Clamp;
+        tex.Apply();
         return tex;
     }
 
@@ -47,10 +47,12 @@ public class RenderTextureToSpriteScript : MonoBehaviour
     {
         while(true)
         {
-            spriteRenderer.sprite = Sprite.Create(ToTexture2D(renderTexture),
+            Texture2D newSprite = ToTexture2D(renderTexture);
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.sprite = Sprite.Create(newSprite,
                 new Rect(0, 0, renderTexture.width, renderTexture.height),
                 new Vector2(0.5f, 0.5f), 1, 0, SpriteMeshType.FullRect);
-            yield return new WaitForSeconds(1 / (float)spriteRefreshRate);
+            yield return new WaitForSecondsRealtime(1 / (float)spriteRefreshRate);
         }
     }
 }

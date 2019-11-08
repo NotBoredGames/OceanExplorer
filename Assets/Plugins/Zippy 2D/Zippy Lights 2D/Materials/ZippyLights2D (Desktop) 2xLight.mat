@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ZippyLights2D (Desktop) 2xLight
-  m_Shader: {fileID: 4800000, guid: fd02e4e19a5d15943aca814a318ba436, type: 3}
+  m_Shader: {fileID: 4800000, guid: 42dee9e2d2754144ca9392f7939fabc1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:

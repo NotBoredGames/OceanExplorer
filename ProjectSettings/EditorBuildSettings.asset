@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SpotlightTest.unity
-    guid: 0ca0a937d3b1ed14b8b89163aacf2514
+    path: Assets/Scenes/NewHierarchyTest.unity
+    guid: 0345165b578beb14c955d6980a401bf1
   m_configObjects: {}

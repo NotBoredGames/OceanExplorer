@@ -68,8 +68,9 @@ public class NEW_MineDropScript : MonoBehaviour
             newMine.name = "PlayerMine[" + Time.realtimeSinceStartup.ToString("#.###") + "]";
             newMine.transform.SetSiblingIndex(this.transform.GetSiblingIndex() - 1);
 
-            RectTransform subRect = this.gameObject.GetComponent<RectTransform>();
-            newMine.transform.position = this.transform.position;
+            Vector3 newMinePosition = this.transform.position;
+            newMinePosition.z = 0;
+            newMine.transform.position = newMinePosition;
 
             Rigidbody2D mine_r2d = newMine.GetComponent<Rigidbody2D>();
             mine_r2d.velocity = new Vector2(0, -mineSpeed);
