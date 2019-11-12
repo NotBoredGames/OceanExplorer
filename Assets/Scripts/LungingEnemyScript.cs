@@ -69,7 +69,7 @@ public class LungingEnemyScript : MonoBehaviour
         // This section handles when the enemy is able to be hit by bullets
         // or when it is able to hit the player
         if (!readyToAttack)
-            this.gameObject.layer = LayerMask.NameToLayer("Invincible");
+            this.gameObject.layer = LayerMask.NameToLayer("Non-Collidable");
         else
             this.gameObject.layer = LayerMask.NameToLayer("Enemy");
 
