@@ -12,32 +12,49 @@ public class AI_BounceScript : MonoBehaviour
     float scrollRate = 1;
 
     [SerializeField]
-    Vector2 x_y_Speed = Vector2.one;
+    [Range(0, 10)]
+    float speed = 5;
 
-    RectTransform rect;
-    int direction = 1;
+    [SerializeField]
+    SubmarineSettingsScript subSettings;
+
+    Vector2 direction = new Vector2(1, 0);
+
+    Vector3 startPos;
 
     // Start is called before the first frame update
     void Awake()
     {
-        rect = GetComponent<RectTransform>();
+        startPos = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(x_y_Speed.x, x_y_Speed.y, 0));
+        float yTranslate = 0;
+
+        if (inheritScroll)
+            yTranslate = LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad) * scrollRate * Time.deltaTime;
+
+        float xTranslate = speed * direction.x * Time.deltaTime;
+
+        transform.Translate(xTranslate, yTranslate, 0);
+
     }
 
     private void LateUpdate()
     {
-        if (inheritScroll)
-        rect.localPosition += new Vector3(LevelScrollControlScript.ScrollDirection * scrollRate * LevelScrollControlScript.GetScrollSpeedX(Time.timeSinceLevelLoad),
-            LevelScrollControlScript.ScrollDirection * scrollRate * LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad), 0);
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        x_y_Speed *= new Vector2(-1, 0);
+        direction.x *= -1;
+
+        if (other.gameObject.tag == "Player")
+        {
+            subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
+            Destroy(this.gameObject);
+        }
     }
 }

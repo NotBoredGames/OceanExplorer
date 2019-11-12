@@ -16,6 +16,9 @@ public class ActivatorTriggerScript : MonoBehaviour
     [SerializeField]
     List<string> scriptsToDeactivate = new List<string>();
 
+    [SerializeField]
+    LayerMask layersToDestroy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +34,8 @@ public class ActivatorTriggerScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Object '" + collision.gameObject.name + "' w/ tag '" + collision.tag + "' entered '" + this.gameObject.name + "'");
-        triggeredOBJs.Add(collision.gameObject);
+        if (!triggeredOBJs.Contains(collision.gameObject))
+            triggeredOBJs.Add(collision.gameObject);
 
         foreach (string script in scriptsToActivate)
         {
@@ -61,7 +65,7 @@ public class ActivatorTriggerScript : MonoBehaviour
         Debug.Log("Object '" + other.gameObject.name + "' w/ tag '" + other.tag + "' exited '" + this.gameObject.name + "'");
         triggeredOBJs.Remove(other.gameObject);
 
-        if(other.tag == "PlayerBullet")
+        if(layersToDestroy.ContainsLayer(other.gameObject.layer))
             Destroy(other.gameObject, 0);
     }
 }
