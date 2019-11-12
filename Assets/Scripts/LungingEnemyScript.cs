@@ -184,6 +184,8 @@ public class LungingEnemyScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+
+        Debug.Log("[[LungingEnemyScript]] " + this.gameObject.name + " collided with " + other.gameObject.name);
         if (other.gameObject == player)
         {
             subController.SetCurrentHP(subController.GetCurrentHP() - lungeDamage);
