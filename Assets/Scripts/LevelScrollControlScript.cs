@@ -15,9 +15,6 @@ public class LevelScrollControlScript : MonoBehaviour
     [SerializeField]
     AnimationCurve setScrollY;
 
-    [SerializeField]
-    bool scroll = true;
-
     public static int ScrollDirection { get; set; }
     public static AnimationCurve ScrollX;
     public static AnimationCurve ScrollY;
@@ -33,12 +30,14 @@ public class LevelScrollControlScript : MonoBehaviour
         ScrollDirection = setScrollDirection;
         ScrollX = setScrollX;
         ScrollY = setScrollY;
+
+        Scroll = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Scroll = scroll;
+
     }
 
     public static float GetScrollSpeedX(float t)

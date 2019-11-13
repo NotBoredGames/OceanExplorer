@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3729265923326119239}
   - component: {fileID: 349011235650148449}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Extra Tentacle Pivot 1
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 27
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35251fd7ebc18794c802ea303e7eb401, type: 3}
   m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
   m_FlipX: 0
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1810394719119156128}
   - component: {fileID: 7606819354802193336}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Extra Tentacle Pivot 3
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 27
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35251fd7ebc18794c802ea303e7eb401, type: 3}
   m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
   m_FlipX: 0
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 9159401338970372719}
   - component: {fileID: 8421959682708444920}
   - component: {fileID: 6534185777718808032}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Extra Tentacle Piece
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 7952886461068064114}
   - component: {fileID: 6734403140026888989}
   - component: {fileID: 3130432108628862291}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Piece Root
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4413123234107202746}
   - component: {fileID: 3205810392779116004}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Pivot 1
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 27
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35251fd7ebc18794c802ea303e7eb401, type: 3}
   m_Color: {r: 0.13039613, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -470,7 +470,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3828421358663301592}
   - component: {fileID: 5558329355984447947}
-  m_Layer: 11
+  - component: {fileID: 2303341777358498742}
+  m_Layer: 18
   m_Name: Tentacle
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -512,6 +513,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!210 &2303341777358498742
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4766460022746810046}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 75
 --- !u!1 &5553958304202513620
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4493427949560330047}
   - component: {fileID: 7234364973643260985}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Extra Tentacle Pivot 2
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -581,7 +593,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 27
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35251fd7ebc18794c802ea303e7eb401, type: 3}
   m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
   m_FlipX: 0
@@ -603,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9165399911829148577}
   - component: {fileID: 3257655672378593471}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Pivot 3
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -661,7 +673,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 27
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35251fd7ebc18794c802ea303e7eb401, type: 3}
   m_Color: {r: 1, g: 0.9267906, b: 0, a: 1}
   m_FlipX: 0
@@ -684,7 +696,7 @@ GameObject:
   - component: {fileID: 8537982944825743770}
   - component: {fileID: 8601418552362011849}
   - component: {fileID: 9191703576652892566}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Extra Tentacle Piece
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -792,7 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2739727154673758562}
   - component: {fileID: 2102067261087207080}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Pivot 2
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -851,7 +863,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 27
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35251fd7ebc18794c802ea303e7eb401, type: 3}
   m_Color: {r: 1, g: 0, b: 0.88127184, a: 1}
   m_FlipX: 0
@@ -874,7 +886,7 @@ GameObject:
   - component: {fileID: 7194236399990234000}
   - component: {fileID: 2254829761640968671}
   - component: {fileID: 6982014668053841934}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Piece 1
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -983,7 +995,7 @@ GameObject:
   - component: {fileID: 6754533586857887763}
   - component: {fileID: 4878394258932266428}
   - component: {fileID: 8616609279009655309}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Piece 2
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -1092,7 +1104,7 @@ GameObject:
   - component: {fileID: 3863286063626969}
   - component: {fileID: 4352560429022512299}
   - component: {fileID: 6224646213100036327}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Extra Tentacle Piece
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -1201,7 +1213,7 @@ GameObject:
   - component: {fileID: 8524694462804104812}
   - component: {fileID: 6342255319493146213}
   - component: {fileID: 6453108974329167815}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Piece 3
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -1309,7 +1321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2410530288445926217}
   - component: {fileID: 1003528678992312706}
-  m_Layer: 11
+  m_Layer: 18
   m_Name: Tentacle Root
   m_TagString: Tentacle
   m_Icon: {fileID: 0}
@@ -1368,7 +1380,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 44
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35251fd7ebc18794c802ea303e7eb401, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
