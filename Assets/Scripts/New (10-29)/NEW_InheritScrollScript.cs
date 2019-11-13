@@ -17,10 +17,13 @@ public class NEW_InheritScrollScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float scrollX = scrollRate * LevelScrollControlScript.ScrollDirection * LevelScrollControlScript.GetScrollSpeedX(Time.timeSinceLevelLoad) * Time.deltaTime;
-        float scrollY = scrollRate * LevelScrollControlScript.ScrollDirection * LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad) * Time.deltaTime;
-        //Debug.Log(scrollY);
+        if (LevelScrollControlScript.Scroll)
+        {
+            float scrollX = scrollRate * LevelScrollControlScript.ScrollDirection * LevelScrollControlScript.GetScrollSpeedX(Time.timeSinceLevelLoad) * Time.deltaTime;
+            float scrollY = scrollRate * LevelScrollControlScript.ScrollDirection * LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad) * Time.deltaTime;
+            //Debug.Log(scrollY);
 
-        transform.position += new Vector3(scrollX, scrollY, 0);
+            transform.position += new Vector3(scrollX, scrollY, 0);
+        }
     }
 }

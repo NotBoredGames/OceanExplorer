@@ -15,9 +15,14 @@ public class LevelScrollControlScript : MonoBehaviour
     [SerializeField]
     AnimationCurve setScrollY;
 
+    [SerializeField]
+    bool scroll = true;
+
     public static int ScrollDirection { get; set; }
     public static AnimationCurve ScrollX;
     public static AnimationCurve ScrollY;
+
+    public static bool Scroll;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +38,7 @@ public class LevelScrollControlScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Scroll = scroll;
     }
 
     public static float GetScrollSpeedX(float t)
@@ -45,4 +50,6 @@ public class LevelScrollControlScript : MonoBehaviour
     {
         return ScrollY.Evaluate(t);
     }
+
+    
 }

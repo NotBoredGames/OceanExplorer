@@ -9,6 +9,7 @@ TagManager:
   - PlayerBullet
   - Environment
   - SubmarineSprite
+  - Tentacle
   layers:
   - Default
   - TransparentFX

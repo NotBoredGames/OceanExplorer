@@ -4,24 +4,16 @@ using UnityEngine;
 
 public class TurretBulletCollisionScript : MonoBehaviour
 {
-  
-    void OnCollisionEnter2D(Collision2D col)
+
+    void OnCollisionEnter2D(Collision2D other)
     {
         //Debug.Log("Hit something");
-        if (col.transform.tag == "Enemy")
+        if (other.transform.tag == "Enemy")
         {
             //Debug.Log("Hit Enemy.");
-            Destroy(col.gameObject);
-            Destroy(this.gameObject);
+            Destroy(other.gameObject);
         }
-        else if (col.transform.tag == "Environment")
-        {
-            Destroy(this.gameObject);
-        }
-    }
-    void OnBecameInvisible()
-    {
-        //Debug.Log("Object offscreen, destroying...");
-        Destroy(gameObject);
+
+        Destroy(this.gameObject);
     }
 }

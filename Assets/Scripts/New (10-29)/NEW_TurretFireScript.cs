@@ -85,7 +85,6 @@ public class NEW_TurretFireScript : MonoBehaviour
 
             Rigidbody2D bullet_r2d = newBullet.GetComponent<Rigidbody2D>();
             bullet_r2d.velocity = bulletSpeed * aimVector;
-            Debug.Log(bullet_r2d.velocity);
 
             yield return new WaitForSeconds(shotDelay);
             canFire = true;
