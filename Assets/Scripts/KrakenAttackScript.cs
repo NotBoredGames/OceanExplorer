@@ -47,18 +47,18 @@ public class KrakenAttackScript : MonoBehaviour
         {
             if (nextToAttack == null)
             {
-                if (Input.GetKeyUp(KeyCode.Keypad3))
+                if (Input.GetKeyUp(KeyCode.Keypad3) || Input.GetKeyUp(KeyCode.Alpha3))
                     nextToAttack = _rightTentacle1;
-                else if (Input.GetKeyUp(KeyCode.Keypad6))
+                else if (Input.GetKeyUp(KeyCode.Keypad6) || Input.GetKeyUp(KeyCode.Alpha6))
                     nextToAttack = _rightTentacle2;
-                else if (Input.GetKeyUp(KeyCode.Keypad1))
+                else if (Input.GetKeyUp(KeyCode.Keypad1) || Input.GetKeyUp(KeyCode.Alpha1))
                     nextToAttack = _leftTentacle1;
-                else if (Input.GetKeyUp(KeyCode.Keypad4))
+                else if (Input.GetKeyUp(KeyCode.Keypad4) || Input.GetKeyUp(KeyCode.Alpha4))
                     nextToAttack = _leftTentacle2;
             }
             else
             {
-                if (Input.GetKeyUp(KeyCode.Keypad1))
+                if (Input.GetKeyUp(KeyCode.Keypad1) || Input.GetKeyUp(KeyCode.Alpha1))
                 {
 
                     nextToAttack.GetComponent<Animator>().SetInteger("swipe", 1);
@@ -66,7 +66,7 @@ public class KrakenAttackScript : MonoBehaviour
                     nextToAttack.GetComponent<Animator>().SetInteger("swipe", -1);
                     nextToAttack = null;
                 }
-                else if (Input.GetKeyUp(KeyCode.Keypad2))
+                else if (Input.GetKeyUp(KeyCode.Keypad2) || Input.GetKeyUp(KeyCode.Alpha2))
                 {
                     nextToAttack.GetComponent<Animator>().SetInteger("swipe", 2);
                     yield return new WaitForSeconds(stateClips[2].length);
