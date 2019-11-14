@@ -19,6 +19,12 @@ public class ActivatorTriggerScript : MonoBehaviour
     [SerializeField]
     LayerMask layersToDestroy;
 
+    [SerializeField]
+    bool printOnEnter = false;
+
+    [SerializeField]
+    bool printOnExit = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +39,8 @@ public class ActivatorTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Object '" + collision.gameObject.name + "' w/ tag '" + collision.tag + "' entered '" + this.gameObject.name + "'");
+        if (printOnEnter)
+            Debug.Log("Object '" + collision.gameObject.name + "' w/ tag '" + collision.tag + "' entered '" + this.gameObject.name + "'");
         if (!triggeredOBJs.Contains(collision.gameObject))
             triggeredOBJs.Add(collision.gameObject);
 
@@ -62,7 +69,8 @@ public class ActivatorTriggerScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Object '" + other.gameObject.name + "' w/ tag '" + other.tag + "' exited '" + this.gameObject.name + "'");
+        if (printOnExit)
+            Debug.Log("Object '" + other.gameObject.name + "' w/ tag '" + other.tag + "' exited '" + this.gameObject.name + "'");
         triggeredOBJs.Remove(other.gameObject);
 
         if(layersToDestroy.ContainsLayer(other.gameObject.layer))

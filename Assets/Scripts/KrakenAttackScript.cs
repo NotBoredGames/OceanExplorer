@@ -5,43 +5,134 @@ using UnityEditor.Animations;
 using Sirenix.OdinInspector;
 
 
-public class KrakenAttackScript : MonoBehaviour
+public class KrakenAttackScript : SerializedMonoBehaviour
 {
-    [SerializeField]
+    [BoxGroup("Tentacles", true, true), SerializeField]
     GameObject _rightTentacle1;
 
-    [SerializeField]
+    [BoxGroup("Tentacles"), SerializeField]
     GameObject _leftTentacle1;
 
-    [SerializeField]
+    [BoxGroup("Tentacles"), SerializeField]
     GameObject _rightTentacle2;
 
-    [SerializeField]
+    [BoxGroup("Tentacles"), SerializeField]
     GameObject _leftTentacle2;
 
-    [SerializeField]
+    [BoxGroup("States and Associated Clips", true, true), SerializeField]
     string[] stateNames;
 
-    [SerializeField]
+    [BoxGroup("States and Associated Clips"), SerializeField]
     AnimationClip[] stateClips;
+
+    [BoxGroup("Attack Triggers", true, true), SerializeField]
+    BoxCollider2D[] playerLocationTriggers;
+
+    [SerializeField]
+    string playerString;
+    GameObject player;
+
+    [BoxGroup("Attack Frequency", true, true)]
+    [InfoBox("Attack Frequency: time between attacks")]
+    [SerializeField, Range(1f, 30f)]
+    float attackFrequency = 15;
 
     [SerializeField]
     GameObject nextToAttack;
 
+    public List<TriggerToAttack> TriggersToAttacks;
+
+    [SerializeField]
+    bool verbose = true;
+
+    public bool runCode = false;
+
     // Start is called before the first frame update
-    void Start()
+    public void Awake()
     {
-        StartCoroutine(TentacleAttack());
+        player = GameObject.Find(playerString); ;
+        if (player == null)
+            Debug.LogError("[[KrakenAttackScript]] on " + this.gameObject.name + " failed to properly detect and set Player's Collider2D!");
+
+        if (runCode)
+            StartCoroutine(IntelligentTentacleAttack());
+
+        //StartCoroutine(KeyTentacleAttack());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        /*
+        if (Input.GetKeyUp(KeyCode.RightBracket))
+        {
+            foreach(Collider2D trigger in playerLocationTriggers)
+            {
+                if (trigger.bounds.Contains(player.transform.position))
+                {
+                    Debug.Log("[[KrakenAttackScript]] on " + this.gameObject.name + " detected player in trigger " + trigger.gameObject.name);
+                    foreach(TriggerToAttack item in TriggersToAttacks)
+                    {
+                        if (item.trigger == trigger)
+                            Debug.Log("Potential attack: Swipe " + item.attack + " using " + item.tentacle.name);
+                    }
+                    break;
+                }
+            }
+        }
+        */
+    }
+
+    IEnumerator IntelligentTentacleAttack()
+    {
+        while (true)
+        {
+            Collider2D currTrigger = new Collider2D();
+            List<TriggerToAttack> potentialAttacks = new List<TriggerToAttack>();
+
+            foreach (Collider2D trigger in playerLocationTriggers)
+                if (trigger.bounds.Contains(player.transform.position))
+                {
+                    currTrigger = trigger;
+                    break;
+                }
+
+            foreach (TriggerToAttack item in TriggersToAttacks)
+            {
+                if (item.trigger == currTrigger)
+                    potentialAttacks.Add(item);
+            }
+
+            if (potentialAttacks != null && currTrigger != null)
+            {
+                if (verbose)
+                    Debug.Log("There are " + potentialAttacks.Count + " potential attack(s) with the player in trigger " + currTrigger.gameObject.name);
+
+                int randIndex = Random.Range(0, potentialAttacks.Count);
+                TriggerToAttack chosenAttack = potentialAttacks[randIndex];
+                nextToAttack = chosenAttack.tentacle;
+
+                StartCoroutine(Attack(chosenAttack.attack));
+            }
+
+            if (verbose)
+                Debug.Log("[[KrakenAttackScript]] ended loop of IntelligentTentacleAttack function");
+            yield return new WaitForSeconds(attackFrequency);
+        }
+    }
+
+    IEnumerator Attack(int attack)
+    {
+        nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = true;
+        nextToAttack.GetComponent<Animator>().SetInteger("swipe", attack);
+        yield return new WaitForSeconds(stateClips[attack].length);
+        nextToAttack.GetComponent<Animator>().SetInteger("swipe", -1);
+        nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = false;
+        nextToAttack = null;
     }
 
 
-    IEnumerator TentacleAttack()
+    IEnumerator KeyTentacleAttack()
     {
         while(true)
         {
@@ -60,21 +151,33 @@ public class KrakenAttackScript : MonoBehaviour
             {
                 if (Input.GetKeyUp(KeyCode.Keypad1) || Input.GetKeyUp(KeyCode.Alpha1))
                 {
-
+                    nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = true;
                     nextToAttack.GetComponent<Animator>().SetInteger("swipe", 1);
                     yield return new WaitForSeconds(stateClips[1].length);
                     nextToAttack.GetComponent<Animator>().SetInteger("swipe", -1);
+                    nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = false;
                     nextToAttack = null;
                 }
                 else if (Input.GetKeyUp(KeyCode.Keypad2) || Input.GetKeyUp(KeyCode.Alpha2))
                 {
+                    nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = true;
                     nextToAttack.GetComponent<Animator>().SetInteger("swipe", 2);
                     yield return new WaitForSeconds(stateClips[2].length);
                     nextToAttack.GetComponent<Animator>().SetInteger("swipe", -1);
+                    nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = false;
+                    nextToAttack = null;
+                }
+                else if (Input.GetKeyUp(KeyCode.Keypad3) || Input.GetKeyUp(KeyCode.Alpha3))
+                {
+                    nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = true;
+                    nextToAttack.GetComponent<Animator>().SetInteger("swipe", 3);
+                    yield return new WaitForSeconds(stateClips[2].length);
+                    nextToAttack.GetComponent<Animator>().SetInteger("swipe", -1);
+                    nextToAttack.GetComponent<AttackingTentacleScript>().isAttacking = false;
                     nextToAttack = null;
                 }
 
-                
+
             }
 
             yield return null;
@@ -123,4 +226,12 @@ public class KrakenAttackScript : MonoBehaviour
     {
         
     }
+}
+
+[InlineProperty()]
+public struct TriggerToAttack
+{
+    public BoxCollider2D trigger;
+    public GameObject tentacle;
+    public int attack;
 }

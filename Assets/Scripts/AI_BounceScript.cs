@@ -12,7 +12,7 @@ public class AI_BounceScript : MonoBehaviour
     float scrollRate = 1;
 
     [SerializeField]
-    [Range(0, 10)]
+    [Range(0, 20)]
     float speed = 5;
 
     [SerializeField]

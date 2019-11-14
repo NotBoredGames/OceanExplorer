@@ -13,6 +13,9 @@ public class BossOnscreenScript : MonoBehaviour
 
     Collider2D scriptActivator;
 
+    float t = 5;
+    bool hasPrinted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,16 +27,33 @@ public class BossOnscreenScript : MonoBehaviour
     {
         if (scriptActivator.bounds.Intersects(activator.bounds))
         {
-            Debug.Log("Boss " + this.gameObject.name + " is onscreen!");
+            if (!hasPrinted)
+            {
+                Debug.Log("Boss " + this.gameObject.name + " is onscreen!");
+                hasPrinted = true;
+            }
             LevelScrollControlScript.Scroll = false;
             this.gameObject.GetComponent<Animator>().SetBool("isOnscreen", true);
-            this.gameObject.GetComponent<KrakenAttackScript>().enabled = true;
-            
-            if (activator.gameObject != this.gameObject)
+
+            ShortWait();
+
+            if (t <= 0)
             {
-                activator.gameObject.SetActive(false);
-                this.enabled = false;
+                this.gameObject.GetComponent<KrakenAttackScript>().enabled = true;
+                this.gameObject.GetComponent<KrakenAttackScript>().runCode = true;
+                this.gameObject.GetComponent<KrakenAttackScript>().Awake();
+
+                if (activator.gameObject != this.gameObject)
+                {
+                    activator.gameObject.SetActive(false);
+                    this.enabled = false;
+                }
             }
         }
+    }
+
+    void ShortWait()
+    {
+        t -= Time.deltaTime;
     }
 }

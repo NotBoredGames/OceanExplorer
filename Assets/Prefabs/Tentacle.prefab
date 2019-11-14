@@ -471,6 +471,8 @@ GameObject:
   - component: {fileID: 3828421358663301592}
   - component: {fileID: 5558329355984447947}
   - component: {fileID: 2303341777358498742}
+  - component: {fileID: 6530305746908982499}
+  - component: {fileID: 7590660617985906090}
   m_Layer: 18
   m_Name: Tentacle
   m_TagString: Tentacle
@@ -524,6 +526,43 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 75
+--- !u!114 &6530305746908982499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4766460022746810046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9bb3071dfd92c45b427c274abc11ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 1
+  subControllerString: Submarine Info Controller
+  playerLayerName: Player
+  isAttacking: 0
+--- !u!50 &7590660617985906090
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4766460022746810046}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5553958304202513620
 GameObject:
   m_ObjectHideFlags: 0
