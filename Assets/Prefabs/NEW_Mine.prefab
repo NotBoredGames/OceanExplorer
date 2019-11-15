@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subSettings: {fileID: 0}
+  mineExplosion: {fileID: 2400009666010714752, guid: a303dce660ae1124f8dbc1bfadd4fe08,
+    type: 3}
   explosionRadius: 15
 --- !u!61 &5346699401871525698
 BoxCollider2D:

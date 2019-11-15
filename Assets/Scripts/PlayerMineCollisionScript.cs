@@ -8,6 +8,9 @@ public class PlayerMineCollisionScript : MonoBehaviour
     SubmarineSettingsScript subSettings;
 
     [SerializeField]
+    GameObject mineExplosion;
+
+    [SerializeField]
     [Range(0, 50)]
     float explosionRadius = 10;
 
@@ -28,9 +31,27 @@ public class PlayerMineCollisionScript : MonoBehaviour
     {
         Vector2 point = other.GetContact(0).point;
 
-        Detonate(point, explosionRadius);
+        Detonate(point);
     }
 
+    public void Detonate(Vector2 _point)
+    {
+        GameObject _mineExplosion = Instantiate(mineExplosion);
+        _mineExplosion.name = this.gameObject.name + " Explosion";
+        _mineExplosion.transform.position = _point;
+        Destroy(this.gameObject);
+    }
+
+    public void Detonate()
+    {
+        GameObject _mineExplosion = Instantiate(mineExplosion);
+        _mineExplosion.name = this.gameObject.name + " Explosion";
+        _mineExplosion.transform.position = this.transform.position;
+        Destroy(this.gameObject);
+    }
+
+    // These are the old versions of Detonate, before we were instantiating a mineExplosion prefab
+    /*
     public void Detonate(Vector2 _point, float _radius)
     {
         Collider2D[] explosionTargets = Physics2D.OverlapCircleAll(_point, _radius);
@@ -70,6 +91,7 @@ public class PlayerMineCollisionScript : MonoBehaviour
 
         Destroy(this.gameObject);
     }
+    */
 
     // Requied for instantiating a new mine in the game scene
     public void SetMineDamage(SubmarineSettingsScript _subSettings)
