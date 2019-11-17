@@ -22,11 +22,14 @@ public class NEW_TurretFireScript : MonoBehaviour
     [SerializeField]
     float turretOffset = 1;
 
+    [SerializeField]
+    public AudioClip shootSound;
+
     bool canFire = true;
     NEW_TurretAimScript aimScript;
     float bulletSpeed = -1;
     float shotDelay = -1;
-
+    
     // Start is called before the first frame update
     // Set variables here that will only ever be set once at start of game
     void Start()
@@ -72,7 +75,10 @@ public class NEW_TurretFireScript : MonoBehaviour
     {
         if (canFire)
         {
+
             canFire = false;
+
+            SoundManagerScript.instance.PlaySingle(shootSound);
 
             GameObject newBullet = Instantiate(playerBullet, this.transform.parent);
             newBullet.name = "TurretBullet[" + Time.realtimeSinceStartup.ToString("#.###") + "]";

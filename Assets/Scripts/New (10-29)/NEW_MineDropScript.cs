@@ -13,6 +13,12 @@ public class NEW_MineDropScript : MonoBehaviour
     [SerializeField]
     SubmarineSettingsScript subSettings;
 
+    [SerializeField]
+    public AudioClip mineBeep;
+
+    [SerializeField]
+    public AudioClip mineExplosion;
+
     bool canFire = true;
     float mineSpeed = -1;
     float mineDelay = -1;
@@ -64,6 +70,8 @@ public class NEW_MineDropScript : MonoBehaviour
             currMines -= 1;
             subSettings.SetCurrentMines(currMines);
 
+            SoundManagerScript.instance.PlayLoop(mineBeep);
+
             GameObject newMine = Instantiate(playerMine, this.transform.parent);
             newMine.name = "PlayerMine[" + Time.realtimeSinceStartup.ToString("#.###") + "]";
             newMine.transform.SetSiblingIndex(this.transform.GetSiblingIndex() - 1);
@@ -86,6 +94,9 @@ public class NEW_MineDropScript : MonoBehaviour
     }
     IEnumerator DetonateMine()
     {
+
+        SoundManagerScript.instance.PlaySingle(mineExplosion);
+
         droppedMine.GetComponent<PlayerMineCollisionScript>().Detonate();
         yield return null;
     }
