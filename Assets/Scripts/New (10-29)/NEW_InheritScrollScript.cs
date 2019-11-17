@@ -6,7 +6,7 @@ public class NEW_InheritScrollScript : MonoBehaviour
 {
     [SerializeField]
     [Range(0.125f, 16)]
-    public float scrollRate = 1;
+    public float scrollRate = -1;
 
     // Start is called before the first frame update
     void Start()

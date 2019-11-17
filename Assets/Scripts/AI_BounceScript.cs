@@ -13,7 +13,7 @@ public class AI_BounceScript : MonoBehaviour
 
     [SerializeField]
     [Range(0, 20)]
-    float speed = 5;
+    float speed = -5;
 
     [SerializeField]
     SubmarineSettingsScript subSettings;
