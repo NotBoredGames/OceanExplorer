@@ -178,7 +178,7 @@ public class LungingEnemyScript : MonoBehaviour
             returnPoint.transform.position = this.transform.position;
 
             returnPoint.AddComponent<NEW_InheritScrollScript>();
-          //  returnPoint.GetComponent<NEW_InheritScrollScript>().scrollRate = GetComponent<NEW_InheritScrollScript>().scrollRate;
+            returnPoint.GetComponent<NEW_InheritScrollScript>().scrollRate = GetComponent<NEW_InheritScrollScript>().scrollRate;
         }
     }
 
