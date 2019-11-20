@@ -35,6 +35,7 @@ public class RadarRenderScript : MonoBehaviour
     {
         while (true)
         {
+            rTex.Release();
             cam.enabled = true;
             cam.Render();
             cam.enabled = false;
