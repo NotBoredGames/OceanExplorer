@@ -30,7 +30,7 @@ TagManager:
   - Environment
   - Non-Collidable
   - Invincible
-  - 
+  - RadarViewable
   - ScriptActivator
   - 
   - 

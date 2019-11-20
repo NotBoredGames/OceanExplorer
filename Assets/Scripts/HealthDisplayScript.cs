@@ -21,7 +21,7 @@ public class HealthDisplayScript : MonoBehaviour
 
     int maxHP = -1;
     int currentHP = -1;
-    float containerHeight = -1;
+    float containerWidth = -1;
     Image[] children;
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class HealthDisplayScript : MonoBehaviour
 
     void Awake()
     {
-        containerHeight = this.gameObject.GetComponent<RectTransform>().rect.height;
+        containerWidth = this.gameObject.GetComponent<RectTransform>().rect.width;
         children = this.transform.GetComponentsInChildren<Image>();
 
         char[] trimArray = { ' ', ',', '.'};
@@ -70,7 +70,7 @@ public class HealthDisplayScript : MonoBehaviour
 
     void Set_Max_HP_Display()
     {
-        float height = (containerHeight / maxHP) - padding;
+        float width = (containerWidth / maxHP) - padding;
         
         foreach (Image child in children)
         {
@@ -83,7 +83,7 @@ public class HealthDisplayScript : MonoBehaviour
             }
             else
             {
-                child.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+                child.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
             }
             
         }

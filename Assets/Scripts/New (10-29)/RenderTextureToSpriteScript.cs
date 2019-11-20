@@ -34,7 +34,7 @@ public class RenderTextureToSpriteScript : MonoBehaviour
 
     Texture2D ToTexture2D(RenderTexture rTex)
     {
-        Texture2D tex = new Texture2D(rTex.width, rTex.height, TextureFormat.RGBA32, true);
+        Texture2D tex = new Texture2D(rTex.width, rTex.height, TextureFormat.RGBA32, false);
         RenderTexture.active = rTex;
         tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
         tex.filterMode = spriteFilterMode;

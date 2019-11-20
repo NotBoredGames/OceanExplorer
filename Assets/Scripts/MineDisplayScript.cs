@@ -21,7 +21,7 @@ public class MineDisplayScript : MonoBehaviour
 
     int maxMines = -1;
     int currentMines = -1;
-    float containerHeight = -1;
+    float containerWidth = -1;
     Image[] children;
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class MineDisplayScript : MonoBehaviour
 
     void Awake()
     {
-        containerHeight = this.gameObject.GetComponent<RectTransform>().rect.height;
+        containerWidth = this.gameObject.GetComponent<RectTransform>().rect.width;
         children = this.transform.GetComponentsInChildren<Image>();
 
         char[] trimArray = { ' ', ',', '.'};
@@ -70,7 +70,7 @@ public class MineDisplayScript : MonoBehaviour
 
     void Set_Max_Mine_Display()
     {
-        float height = (containerHeight / maxMines) - padding;
+        float width = (containerWidth / maxMines) - padding;
         
         foreach (Image child in children)
         {
@@ -83,7 +83,7 @@ public class MineDisplayScript : MonoBehaviour
             }
             else
             {
-                child.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+                child.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
             }
             
         }
