@@ -24,3 +24,12 @@ Notes for middleground objects:
 			set scale to (-4, 4, 1))
 	- Should also have Rigidbody2D set to Kinematic
 	- For best visual effect set sprite color to grey (as opposed to default white)
+
+Notes for Radar:
+	- To get an object to appear on the radar first give it a child component
+	- Set the layer of this child to "RadarViewable"
+	- Add a sprite to the child
+		- For enemies just use a square roughly the same size as the enemy
+		- For obstacles use the same sprite as the parent object
+	- Set the color of the child sprite to white [RGBA(1,1,1,1)]
+	- Set the material on the child's Sprite Renderer to any of the Radar Materials (ie RadarObstacleMaterial)
