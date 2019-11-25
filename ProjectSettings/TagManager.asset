@@ -10,6 +10,7 @@ TagManager:
   - Environment
   - SubmarineSprite
   - Tentacle
+  - SubCamBarrier
   layers:
   - Default
   - TransparentFX
