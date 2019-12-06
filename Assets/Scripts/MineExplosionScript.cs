@@ -7,6 +7,11 @@ public class MineExplosionScript : MonoBehaviour
     [SerializeField]
     LayerMask destructibleTargets;
 
+    [SerializeField]
+    SubmarineSettingsScript subSettings;
+
+    public bool isEnemyMine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +28,22 @@ public class MineExplosionScript : MonoBehaviour
     {
         if (destructibleTargets.ContainsLayer(other.gameObject.layer))
         {
-            // Replace with a damage dealing function down the line
-            Destroy(other.gameObject);
+            // CURRENTLY NOT WORKING
+            // if the mine this is attached to is the enemy mine
+            //the enemy mine's explosion can damage player
+            if(other.gameObject.tag == "Player")
+            {
+                if (isEnemyMine == true)
+                {
+                    subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
+                }
+            }
+
+            else
+            {
+                // Replace with a damage dealing function down the line
+                Destroy(other.gameObject);
+            }
         }
     }
 
