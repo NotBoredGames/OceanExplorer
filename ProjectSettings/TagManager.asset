@@ -10,6 +10,7 @@ TagManager:
   - Environment
   - SubmarineSprite
   - Tentacle
+  - FlipSprite
   layers:
   - Default
   - TransparentFX

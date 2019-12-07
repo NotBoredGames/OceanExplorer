@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AI_BounceScript : MonoBehaviour
+public class FlipEnemyAI_Script : MonoBehaviour
 {
     [SerializeField]
     bool inheritScroll = false;
@@ -18,7 +20,7 @@ public class AI_BounceScript : MonoBehaviour
     [SerializeField]
     SubmarineSettingsScript subSettings;
 
-    Vector2 direction = new Vector2(1, 0);
+    Vector2 direction = new Vector2(-1, 0);
 
     Vector3 startPos;
 
@@ -33,7 +35,7 @@ public class AI_BounceScript : MonoBehaviour
     {
 
 
-            float yTranslate = 0;
+        float yTranslate = 0;
 
         if (inheritScroll)
             yTranslate = LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad) * scrollRate * Time.deltaTime;
@@ -54,8 +56,10 @@ public class AI_BounceScript : MonoBehaviour
     // change direction when enemy runs into wall
     private void OnCollisionEnter2D(Collision2D other)
     {
-        direction.x *= -1;
 
+   //     direction.x *= -1;
+        transform.Rotate(0, 180, 0);
+     //   direction.x *= -1;  
 
         if (other.gameObject.tag == "Player")
         {
@@ -64,3 +68,4 @@ public class AI_BounceScript : MonoBehaviour
         }
     }
 }
+
