@@ -25,6 +25,9 @@ public class LungingEnemyScript : MonoBehaviour
     [SerializeField]
     GameObject player;
 
+    [SerializeField]
+    bool onLeftSide;
+
     float tripwireDist = 100;
     bool detectedPlayer;
     bool readyToAttack;
@@ -115,7 +118,17 @@ public class LungingEnemyScript : MonoBehaviour
         {
             //Debug.Log("WindUP: t = " + windUpTime);
             windUpTime -= Time.deltaTime;
-            transform.right = player.transform.position - this.transform.position;
+
+            if (onLeftSide == false)
+            {
+                transform.right = (-player.transform.position) + (this.transform.position);
+            }
+           
+            // if the enemy is on the left side of the level then their roation will need to be inversed
+            if(onLeftSide == true)
+            {
+                transform.right = (player.transform.position) + (-this.transform.position);
+            }
         }
         else
         {

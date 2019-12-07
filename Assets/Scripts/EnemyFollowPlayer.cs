@@ -7,6 +7,9 @@ public class EnemyFollowPlayer : MonoBehaviour
     public Transform target;//set target from inspector instead of looking in Update
     public float speed = 10f;
 
+    [SerializeField]
+    SubmarineSettingsScript subSettings;
+
     void Start()
     {
 
@@ -27,6 +30,16 @@ public class EnemyFollowPlayer : MonoBehaviour
             transform.position += (target.position - transform.position).normalized * speed * Time.deltaTime;
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+
+        if (other.gameObject.tag == "Player")
+        {
+            subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
+            Destroy(this.gameObject);
+        }
     }
 
 }

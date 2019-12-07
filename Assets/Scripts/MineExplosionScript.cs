@@ -36,6 +36,7 @@ public class MineExplosionScript : MonoBehaviour
                 if (isEnemyMine == true)
                 {
                     subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
+                    // can't set the reference in the prefab
                 }
             }
 
