@@ -73,6 +73,7 @@ MonoBehaviour:
   mineExplosion: {fileID: 2400009666010714752, guid: a303dce660ae1124f8dbc1bfadd4fe08,
     type: 3}
   explosionRadius: 15
+  mineExplosion_Sound: {fileID: 8300000, guid: 8172616cd3b92c94cb5da3eb8fb6bd8b, type: 3}
 --- !u!61 &5346699401871525698
 BoxCollider2D:
   m_ObjectHideFlags: 0

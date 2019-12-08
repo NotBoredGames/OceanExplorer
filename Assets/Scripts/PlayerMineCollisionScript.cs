@@ -14,6 +14,9 @@ public class PlayerMineCollisionScript : MonoBehaviour
     [Range(0, 50)]
     float explosionRadius = 10;
 
+    [SerializeField]
+    public AudioClip mineExplosion_Sound;
+
     int damage;
     // Start is called before the first frame update
     void Awake()
@@ -32,6 +35,7 @@ public class PlayerMineCollisionScript : MonoBehaviour
         Vector2 point = other.GetContact(0).point;
 
         Detonate(point);
+
     }
 
     public void Detonate(Vector2 _point)
@@ -40,6 +44,7 @@ public class PlayerMineCollisionScript : MonoBehaviour
         _mineExplosion.name = this.gameObject.name + " Explosion";
         _mineExplosion.transform.position = _point;
         Destroy(this.gameObject);
+        SoundManagerScript.instance.PlaySingle(mineExplosion_Sound);
     }
 
     public void Detonate()
@@ -48,6 +53,7 @@ public class PlayerMineCollisionScript : MonoBehaviour
         _mineExplosion.name = this.gameObject.name + " Explosion";
         _mineExplosion.transform.position = this.transform.position;
         Destroy(this.gameObject);
+        SoundManagerScript.instance.PlaySingle(mineExplosion_Sound);
     }
 
     // These are the old versions of Detonate, before we were instantiating a mineExplosion prefab

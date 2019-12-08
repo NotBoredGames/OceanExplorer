@@ -3,7 +3,11 @@ guid: 8a3e46a53858a344ea4b8a6b337b5cc1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - subSettings: {instanceID: 0}
+  - mineExplosion: {instanceID: 0}
+  - mineExplosion_Sound: {fileID: 8300000, guid: 8172616cd3b92c94cb5da3eb8fb6bd8b,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
