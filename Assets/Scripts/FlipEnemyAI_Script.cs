@@ -57,9 +57,11 @@ public class FlipEnemyAI_Script : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
 
-   //     direction.x *= -1;
-        transform.Rotate(0, 180, 0);
-     //   direction.x *= -1;  
+        if (other.gameObject.tag != "PlayerBullet")
+        {
+            transform.Rotate(0, 180, 0);
+
+        }
 
         if (other.gameObject.tag == "Player")
         {

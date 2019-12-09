@@ -10,8 +10,8 @@ public class TurretBulletCollisionScript : MonoBehaviour
         //Debug.Log("Hit something");
         if (other.transform.tag == "Enemy")
         {
-            //Debug.Log("Hit Enemy.");
-            Destroy(other.gameObject);
+            Debug.Log("Oof");
+          //  Destroy(other.gameObject);
         }
 
         Destroy(this.gameObject);

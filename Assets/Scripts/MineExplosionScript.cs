@@ -7,9 +7,6 @@ public class MineExplosionScript : MonoBehaviour
     [SerializeField]
     LayerMask destructibleTargets;
 
-    [SerializeField]
-    SubmarineSettingsScript subSettings;
-
     public bool isEnemyMine;
 
     // Start is called before the first frame update
@@ -24,27 +21,19 @@ public class MineExplosionScript : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    // should probably change to have health/damage taken in objects themselves
+    private void OnCollision2D(Collision2D other)
     {
+
         if (destructibleTargets.ContainsLayer(other.gameObject.layer))
         {
-            // CURRENTLY NOT WORKING
-            // if the mine this is attached to is the enemy mine
-            //the enemy mine's explosion can damage player
-            if(other.gameObject.tag == "Player")
-            {
-                if (isEnemyMine == true)
-                {
-                    subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
-                    // can't set the reference in the prefab
-                }
-            }
 
-            else
-            {
-                // Replace with a damage dealing function down the line
-                Destroy(other.gameObject);
-            }
+            // Replace with a damage dealing function down the line
+            // damage is done within the enemy objects themselves now
+            //    Destroy(other.gameObject);
+            Debug.Log("Boom");
+            
+            
         }
     }
 

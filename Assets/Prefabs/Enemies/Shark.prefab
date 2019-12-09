@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4125371327784436659}
   - component: {fileID: 2002865979}
   - component: {fileID: 5118393455960630419}
+  - component: {fileID: 36058528}
   m_Layer: 11
   m_Name: Shark
   m_TagString: Enemy
@@ -180,6 +181,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &36058528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125371327784436662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 5
 --- !u!1 &7442000650637731840
 GameObject:
   m_ObjectHideFlags: 0

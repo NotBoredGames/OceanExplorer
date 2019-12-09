@@ -14,6 +14,9 @@ public class MineEnemyExplosion : MonoBehaviour
     [Range(0, 50)]
     float explosionRadius = 10;
 
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,7 @@ public class MineEnemyExplosion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    
         
     }
 
@@ -30,13 +34,14 @@ public class MineEnemyExplosion : MonoBehaviour
     {
         Vector2 point = other.GetContact(0).point;
 
+
         // once player collides with mine take damage
         if (other.gameObject.tag == "Player")
         {
             subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
         }
 
-        // if other enemies collide with mine itwon't detonate
+        // if other enemies collide with mine it won't detonate
         if (other.gameObject.tag != "Enemy")
         {
             Detonate(point);
