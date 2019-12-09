@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 972793393041863147}
   - component: {fileID: 6860621222573324100}
   - component: {fileID: 539592034}
-  - component: {fileID: 661901324080244814}
-  - component: {fileID: -4835755764061380641}
+  - component: {fileID: 5806237543536086302}
   - component: {fileID: 539592037}
   m_Layer: 11
   m_Name: NEW_Enemy
@@ -133,6 +132,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &661901324080244814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574181088683677198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  scrollRate: 4
 --- !u!95 &539592034
 Animator:
   serializedVersion: 3
@@ -148,11 +160,11 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &661901324080244814
+--- !u!114 &5806237543536086302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,24 +173,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 574181088683677198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollRate: 4
---- !u!114 &-4835755764061380641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574181088683677198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6319ec016e52b1146a09e9695087fe6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setStartHealth: 1
-  currHealth: 1
+  m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HP: 1
 --- !u!114 &539592037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,8 +187,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c2d849944c49f439c61bc282acabbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inheritScroll: 1
   scrollRate: 5
   speed: 5

@@ -11,6 +11,8 @@ TagManager:
   - SubmarineSprite
   - Tentacle
   - FlipSprite
+  - Explosion
+  - PlayerMineExplosion
   layers:
   - Default
   - TransparentFX
@@ -33,8 +35,8 @@ TagManager:
   - Invincible
   - RadarViewable
   - ScriptActivator
-  - 
-  - 
+  - PlayerMine
+  - EnemyMineExplosion
   - 
   - 
   - 
