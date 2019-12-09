@@ -56,6 +56,7 @@ public class FlipEnemyAI_Script : MonoBehaviour
         {
             //transform.Rotate(0, 180, 0);
             direction *= new Vector2(-1, 1);
+            GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
         }
         // REASON REMOVED - Duplicate code to method in EnemyCollisionScript.cs
         // attached to Player GameObject
