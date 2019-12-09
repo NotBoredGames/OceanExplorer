@@ -16,9 +16,7 @@ public class FlipEnemyAI_Script : MonoBehaviour
     [SerializeField]
     [Range(0, 20)]
     float speed = 5;
-
-    [SerializeField]
-    SubmarineSettingsScript subSettings;
+    
 
     Vector2 direction = new Vector2(-1, 0);
 
@@ -30,11 +28,10 @@ public class FlipEnemyAI_Script : MonoBehaviour
         startPos = transform.position;
     }
 
+
     // Update is called once per frame
     void Update()
     {
-
-
         float yTranslate = 0;
 
         if (inheritScroll)
@@ -42,10 +39,7 @@ public class FlipEnemyAI_Script : MonoBehaviour
 
         float xTranslate = speed * direction.x * Time.deltaTime;
 
-        transform.Translate(xTranslate, yTranslate, 0);
-
-
-
+        transform.Translate(xTranslate, yTranslate, 0, Space.World);
     }
 
     private void LateUpdate()
@@ -59,15 +53,18 @@ public class FlipEnemyAI_Script : MonoBehaviour
 
         if (other.gameObject.tag != "PlayerBullet")
         {
-            transform.Rotate(0, 180, 0);
-
+            //transform.Rotate(0, 180, 0);
+            direction *= new Vector2(-1, 1);
         }
-
+        // REASON REMOVED - Duplicate code to method in EnemyCollisionScript.cs
+        // attached to Player GameObject
+        /*
         if (other.gameObject.tag == "Player")
         {
             subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
             Destroy(this.gameObject);
         }
+        */
     }
 }
 

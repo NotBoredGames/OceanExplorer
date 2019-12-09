@@ -6,9 +6,16 @@ public class EnemyHealthManagment : MonoBehaviour
 {
     public int HP;
 
-    void Start()
+    public string subControllerString = "Submarine Info Controller";
+
+    SubmarineSettingsScript subSettings;
+
+    void Awake()
     {
-        
+        subSettings = GameObject.Find(subControllerString).GetComponent<SubmarineSettingsScript>();
+
+        if (subSettings == null)
+            Debug.LogError("[[EnemyHealthManagement]] Script on GameObject " + this.gameObject.name + " unable to find SubmarineSettingsScript!");
     }
 
     void Update()
@@ -28,16 +35,12 @@ public class EnemyHealthManagment : MonoBehaviour
         //if hit by player turret fire
         if (other.gameObject.tag == "PlayerBullet")
         {
-            // multiply for marine biologist upgrades
-            HP -= 1;
-
+            HP -= subSettings.GetBulletDamage();
         }
-
         // if hit by player mine
-        if (other.gameObject.tag == "PlayerMineExplosion")
+        else if (other.gameObject.tag == "PlayerMineExplosion")
         {
-            HP -= 25;
-
+            HP -= subSettings.GetMineDamage();
         }
     }
 }

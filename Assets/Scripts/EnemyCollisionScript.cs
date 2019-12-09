@@ -6,12 +6,17 @@ public class EnemyCollisionScript : MonoBehaviour
 {
    
     [SerializeField]
-    GameObject subController;
+    string subControllerString = "Submarine Info Controller";
+
+    SubmarineSettingsScript subSettings;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        subSettings = GameObject.Find(subControllerString).GetComponent<SubmarineSettingsScript>();
+
+        if (subSettings == null)
+            Debug.LogError("[[EnemyCollisionScript]] Script on GameObject " + this.gameObject.name + " unable to find SubmarineSettingsScript!");
     }
 
     // Update is called once per frame
@@ -25,7 +30,6 @@ public class EnemyCollisionScript : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if (other.gameObject.tag == "Enemy")
         {
-            SubmarineSettingsScript subSettings = subController.GetComponent<SubmarineSettingsScript>();
             subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
             Destroy(other.gameObject);
         }

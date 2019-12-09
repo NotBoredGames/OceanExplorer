@@ -15,8 +15,8 @@ public class AI_BounceScript : MonoBehaviour
     [Range(0, 20)]
     float speed = 5;
 
-    [SerializeField]
-    SubmarineSettingsScript subSettings;
+    //[SerializeField]
+    //SubmarineSettingsScript subSettings;
 
     Vector2 direction = new Vector2(1, 0);
 
@@ -56,11 +56,13 @@ public class AI_BounceScript : MonoBehaviour
     {
         direction.x *= -1;
 
-
+        // DUPLICATE CODE - ALREADY EXISTS IN EnemyCollisionScript.cs
+        /*
         if (other.gameObject.tag == "Player")
         {
             subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
             Destroy(this.gameObject);
         }
+        */
     }
 }

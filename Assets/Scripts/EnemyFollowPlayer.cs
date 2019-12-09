@@ -32,14 +32,4 @@ public class EnemyFollowPlayer : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-
-        if (other.gameObject.tag == "Player")
-        {
-            subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
-            Destroy(this.gameObject);
-        }
-    }
-
 }

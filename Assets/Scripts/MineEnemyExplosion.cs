@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MineEnemyExplosion : MonoBehaviour
 {
-    [SerializeField]
-    SubmarineSettingsScript subSettings;
 
     [SerializeField]
     GameObject mineExplosion;
@@ -18,9 +16,8 @@ public class MineEnemyExplosion : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
     }
 
     // Update is called once per frame
@@ -34,12 +31,13 @@ public class MineEnemyExplosion : MonoBehaviour
     {
         Vector2 point = other.GetContact(0).point;
 
-
+        /*
         // once player collides with mine take damage
         if (other.gameObject.tag == "Player")
         {
             subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
         }
+        */
 
         // if other enemies collide with mine it won't detonate
         if (other.gameObject.tag != "Enemy")

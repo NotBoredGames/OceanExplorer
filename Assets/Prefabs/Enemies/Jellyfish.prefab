@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 711399865190573558}
   - component: {fileID: 67815506177001690}
   - component: {fileID: 711399865190573553}
-  - component: {fileID: -7537655480412636811}
+  - component: {fileID: -3661243729389654201}
   m_Layer: 11
   m_Name: Jellyfish
   m_TagString: Enemy
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 56fd1cddf1e5af14e87eb788c7453bb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &315084880256110975
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020206881251309210}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
   m_Name: 
@@ -180,8 +180,7 @@ MonoBehaviour:
   inheritScroll: 1
   scrollRate: 5
   speed: 5
-  subSettings: {fileID: 0}
---- !u!114 &-7537655480412636811
+--- !u!114 &-3661243729389654201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,10 +189,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020206881251309210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6319ec016e52b1146a09e9695087fe6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setStartHealth: 1
+  HP: 1
+  subControllerString: Submarine Info Controller
 --- !u!1 &3095355441788267476
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_Sprite: {fileID: 21300000, guid: f5ec4422812a00e40bb5aa9229a9e1d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

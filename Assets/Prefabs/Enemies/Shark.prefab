@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5118393455960630419}
   - component: {fileID: 4125371327784436659}
   - component: {fileID: 2002865979}
-  - component: {fileID: 5118393455960630419}
   - component: {fileID: 36058528}
   m_Layer: 11
   m_Name: Shark
@@ -149,7 +148,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -163,8 +162,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   scrollRate: 4
 --- !u!114 &2002865979
 MonoBehaviour:
@@ -176,30 +175,12 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a285b398340bd940bf3ce05a4559c38, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   inheritScroll: 1
   scrollRate: 4
-  speed: 5
-  subSettings: {fileID: 0}
---- !u!114 &-3380226682786392319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4125371327784436662}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 151a9a1835115e24d9c2124bcf8dee27, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage:
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  speed: 8
+  subControllerString: Submarine Info Controller
 --- !u!114 &36058528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,9 +191,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   HP: 5
+  subControllerString: Submarine Info Controller
 --- !u!1 &7442000650637731840
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 7442000650637731840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4125371327784436661}
   m_RootOrder: 0
