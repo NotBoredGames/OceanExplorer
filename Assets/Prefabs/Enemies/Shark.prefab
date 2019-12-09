@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4125371327784436656}
   - component: {fileID: 4125371327784436657}
   - component: {fileID: 4125371327784436658}
+  - component: {fileID: 5118393455960630419}
   - component: {fileID: 4125371327784436659}
   - component: {fileID: 2002865979}
-  - component: {fileID: 5118393455960630419}
+  - component: {fileID: -3380226682786392319}
   m_Layer: 11
   m_Name: Shark
   m_TagString: Enemy
@@ -132,6 +133,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 2.6}
   m_EdgeRadius: 0
+--- !u!95 &5118393455960630419
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125371327784436662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 151a9a1835115e24d9c2124bcf8dee27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &4125371327784436659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,25 +181,20 @@ MonoBehaviour:
   scrollRate: 4
   speed: 5
   subSettings: {fileID: 0}
---- !u!95 &5118393455960630419
-Animator:
-  serializedVersion: 3
+--- !u!114 &-3380226682786392319
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4125371327784436662}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 151a9a1835115e24d9c2124bcf8dee27, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6319ec016e52b1146a09e9695087fe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setStartHealth: 8
+  currHealth: 0
 --- !u!1 &7442000650637731840
 GameObject:
   m_ObjectHideFlags: 0

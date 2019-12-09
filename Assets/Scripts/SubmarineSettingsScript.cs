@@ -79,6 +79,11 @@ public class SubmarineSettingsScript : MonoBehaviour
 
         maxHP = startingHP;
         currentHP = startingHP;
+
+        currentBulletDamage = startingBulletDamage;
+        currentMineDamage = startingMineDamage;
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame

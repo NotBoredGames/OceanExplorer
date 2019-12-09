@@ -7,10 +7,13 @@ public class MineExplosionScript : MonoBehaviour
     [SerializeField]
     LayerMask destructibleTargets;
 
+    int damage = 0;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        SubmarineSettingsScript subSettings = GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>();
+        damage = subSettings.GetMineDamage();
     }
 
     // Update is called once per frame
@@ -24,7 +27,11 @@ public class MineExplosionScript : MonoBehaviour
         if (destructibleTargets.ContainsLayer(other.gameObject.layer))
         {
             // Replace with a damage dealing function down the line
-            Destroy(other.gameObject);
+            EnemyHealthScript enemyHP = other.gameObject.GetComponent<EnemyHealthScript>();
+            if (enemyHP != null)
+                enemyHP.SetHealth(enemyHP.GetHealth() - damage);
+            //else
+                //Destroy(other.gameObject);
         }
     }
 

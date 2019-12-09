@@ -64,7 +64,8 @@ public class NEW_RandomizeAppearanceScript : MonoBehaviour
 
         spriteOutline.color = new Color(outlineColor.r, outlineColor.g, outlineColor.b, 1);
 
-        _paintMat.color = new Color(paintR, paintG, paintB, 1);
+        // Not required anymore
+        //_paintMat.color = new Color(paintR, paintG, paintB, 1);
 
         if (patternList.Count > 0 && setSubPattern)
         {

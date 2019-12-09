@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7803441561777610354}
   - component: {fileID: 315084880256110975}
   - component: {fileID: 6263017036119889872}
-  - component: {fileID: 67815506177001690}
   - component: {fileID: 711399865190573558}
+  - component: {fileID: 67815506177001690}
   - component: {fileID: 711399865190573553}
+  - component: {fileID: -7537655480412636811}
   m_Layer: 11
   m_Name: Jellyfish
   m_TagString: Enemy
@@ -132,19 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &67815506177001690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020206881251309210}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollRate: 4
 --- !u!95 &711399865190573558
 Animator:
   serializedVersion: 3
@@ -164,6 +152,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &67815506177001690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020206881251309210}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollRate: 4
 --- !u!114 &711399865190573553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +181,19 @@ MonoBehaviour:
   scrollRate: 5
   speed: 5
   subSettings: {fileID: 0}
+--- !u!114 &-7537655480412636811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020206881251309210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6319ec016e52b1146a09e9695087fe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setStartHealth: 1
 --- !u!1 &3095355441788267476
 GameObject:
   m_ObjectHideFlags: 0
