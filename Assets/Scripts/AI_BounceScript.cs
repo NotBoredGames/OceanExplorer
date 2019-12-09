@@ -32,18 +32,16 @@ public class AI_BounceScript : MonoBehaviour
     void Update()
     {
 
-
-            float yTranslate = 0;
+        float yTranslate = 0;
 
         if (inheritScroll)
             yTranslate = LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad) * scrollRate * Time.deltaTime;
 
         float xTranslate = speed * direction.x * Time.deltaTime;
 
-        transform.Translate(xTranslate, yTranslate, 0);
-
-
-
+        if (LevelScrollControlScript.Scroll)
+            transform.Translate(xTranslate, yTranslate, 0);
+        
     }
 
     private void LateUpdate()

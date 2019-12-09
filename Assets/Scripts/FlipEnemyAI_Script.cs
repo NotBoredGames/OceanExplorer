@@ -39,6 +39,7 @@ public class FlipEnemyAI_Script : MonoBehaviour
 
         float xTranslate = speed * direction.x * Time.deltaTime;
 
+        if (LevelScrollControlScript.Scroll)
         transform.Translate(xTranslate, yTranslate, 0, Space.World);
     }
 
