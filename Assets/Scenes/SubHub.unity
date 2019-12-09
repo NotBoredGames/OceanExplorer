@@ -237,7 +237,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88281775}
-  m_Text: Navigator
+  m_Text: Scrapper
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -465,7 +465,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &257191449
 GameObject:
@@ -531,7 +531,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297374753
 GameObject:
@@ -705,7 +705,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406486815
 GameObject:
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406486815}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -909,7 +909,7 @@ Transform:
   m_Children:
   - {fileID: 2185921}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &528916045
 MonoBehaviour:
@@ -927,6 +927,8 @@ MonoBehaviour:
     name: Dog
     sentences:
     - Woof!
+  upgradeName: Doggo Happiness
+  upgradeLevel: 0
 --- !u!1 &608209270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,8 +1168,8 @@ GameObject:
   - component: {fileID: 735251136}
   - component: {fileID: 735251135}
   - component: {fileID: 735251134}
-  - component: {fileID: 735251138}
   - component: {fileID: 735251137}
+  - component: {fileID: 735251138}
   m_Layer: 5
   m_Name: UpgradeButton
   m_TagString: Untagged
@@ -1236,7 +1238,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 735251135}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 735251138}
+        m_MethodName: pressUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &735251135
@@ -1268,7 +1281,7 @@ MonoBehaviour:
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -1320,13 +1333,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 735251132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b65fec360c350c74085a28ada1c3d931, type: 3}
+  m_Script: {fileID: 11500000, guid: eaf23e72660e95c449b9c9a06fc0be3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Name of the Upgrade / Level
-    sentences:
-    - What the upgrade does goes here!
+    name: 
+    sentences: []
+  scrapCost: 0
+  currentValue: 0
+  perLevelScrapCost: 100
 --- !u!1 &776569365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,7 +1451,7 @@ RectTransform:
   - {fileID: 1402704663}
   - {fileID: 297374754}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1522,6 +1537,60 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &813498424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 813498426}
+  - component: {fileID: 813498425}
+  m_Layer: 0
+  m_Name: PlayerUpgradeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &813498425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813498424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204edca3b2bd4f149bd4128c2c89ec3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScrapAmount: 10000000
+  healthAmt: 0
+  engineerLevel: 0
+  bombAmt: 0
+  weaponsmithLevel: 0
+  subSpeed: 0
+  navigatorLevel: 0
+  scrapIncrease: 0
+  scrapperLevel: 0
+  damageAmt: 0
+  marineBiologistLevel: 0
+--- !u!4 &813498426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813498424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 310.56396, y: 748.8042, z: -64.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &878917369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,7 +1739,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917428902
 GameObject:
@@ -1709,7 +1778,8 @@ MonoBehaviour:
     name: Biologist
     sentences:
     - Hello Captain!
-    - 
+  upgradeName: Increase Damage
+  upgradeLevel: 0
 --- !u!65 &917428904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1817,7 +1887,7 @@ Transform:
   m_Children:
   - {fileID: 608209273}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &926551417
 GameObject:
@@ -2016,6 +2086,8 @@ MonoBehaviour:
     name: Name of the Upgrade / Level
     sentences:
     - What the upgrade does goes here!
+  upgradeName: 
+  upgradeLevel: 0
 --- !u!114 &1057168095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2228,7 +2300,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1138081055
 GameObject:
@@ -2694,7 +2766,7 @@ Transform:
   m_Children:
   - {fileID: 1607316347}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1238210888
 MonoBehaviour:
@@ -2712,6 +2784,8 @@ MonoBehaviour:
     name: Engineer
     sentences:
     - What can I do ya for?
+  upgradeName: Increase Health
+  upgradeLevel: 0
 --- !u!1 &1244094809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,7 +2804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1244094810
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2884,7 +2958,7 @@ Transform:
   m_Children:
   - {fileID: 996599145}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1402704662
 GameObject:
@@ -2926,7 +3000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 120}
+  m_AnchoredPosition: {x: 17, y: 120}
   m_SizeDelta: {x: 100, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1402704664
@@ -3063,7 +3137,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1496215208
 Animator:
@@ -3303,7 +3377,7 @@ Transform:
   m_Children:
   - {fileID: 1510753403}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1515211331
 MonoBehaviour:
@@ -3321,6 +3395,8 @@ MonoBehaviour:
     name: Navigator
     sentences:
     - Ho Captain!
+  upgradeName: Increase Speed
+  upgradeLevel: 0
 --- !u!1 &1607316344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,7 +3530,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703042582
 GameObject:
@@ -3490,9 +3566,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Navigator
+    name: Scrapper
     sentences:
-    - Ho Captain!
+    - Ay Cap'n!
+  upgradeName: Increase Scrap
+  upgradeLevel: 0
 --- !u!65 &1703042584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3600,7 +3678,7 @@ Transform:
   m_Children:
   - {fileID: 88281778}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726340706
 GameObject:
@@ -3736,7 +3814,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799239455
 GameObject:
@@ -3782,7 +3860,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799239455}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3935,7 +4013,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020349572}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -4184,7 +4262,7 @@ Transform:
   m_Children:
   - {fileID: 2026276349}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2127951537
 MonoBehaviour:
@@ -4202,3 +4280,5 @@ MonoBehaviour:
     name: Weaponsmith
     sentences:
     - Good day cap.
+  upgradeName: Increase Bombs
+  upgradeLevel: 0
