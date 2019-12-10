@@ -46,6 +46,7 @@ public class KrakenAttackScript : SerializedMonoBehaviour
     bool verbose = true;
 
     public bool runCode = false;
+    
 
     // Start is called before the first frame update
     public void Awake()
@@ -85,7 +86,7 @@ public class KrakenAttackScript : SerializedMonoBehaviour
 
     IEnumerator IntelligentTentacleAttack()
     {
-        while (true)
+        while (runCode)
         {
             Collider2D currTrigger = new Collider2D();
             List<TriggerToAttack> potentialAttacks = new List<TriggerToAttack>();

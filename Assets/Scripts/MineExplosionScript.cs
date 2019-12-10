@@ -23,16 +23,15 @@ public class MineExplosionScript : MonoBehaviour
     }
 
     // should probably change to have health/damage taken in objects themselves
-    private void OnCollision2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-
         if (destructibleTargets.ContainsLayer(other.gameObject.layer))
         {
 
             // Replace with a damage dealing function down the line
             // damage is done within the enemy objects themselves now
             //    Destroy(other.gameObject);
-            Debug.Log("Boom");
+            //Debug.Log("Boom");
 
 
         }

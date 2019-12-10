@@ -978,7 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40807d4423a0b2842adbdd273ddc66e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subSettings: {fileID: 0}
+  subControllerString: Submarine Info Controller
   childPrefixString: HP
   padding: 4
 --- !u!114 &2833066630305450030
@@ -2515,6 +2515,7 @@ GameObject:
   - component: {fileID: 2833066631007328396}
   - component: {fileID: 2833066631007328398}
   - component: {fileID: 2833066631007328399}
+  - component: {fileID: 7145443295428712952}
   m_Layer: 5
   m_Name: Scrap Number
   m_TagString: Untagged
@@ -2569,7 +2570,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 0000
+  m_text: 000000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2638,7 +2639,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2833066631007328399}
-    characterCount: 4
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -2661,6 +2662,19 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7145443295428712952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833066631007328397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0d003744cb9b34f95a46897e8a4933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subControllerString: Submarine Info Controller
 --- !u!1 &2833066631063214684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bf47f1316bf3f748a42ac2d31c8234d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subSettings: {fileID: 0}
+  subControllerString: Submarine Info Controller
   childPrefixString: Mine
   padding: 4
 --- !u!114 &2833066631655364675
@@ -4935,7 +4949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6359110467352832975
 RectTransform:
   m_ObjectHideFlags: 0

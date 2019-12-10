@@ -17,6 +17,7 @@ public class UI_LevelIntroOutroScript : MonoBehaviour
     void Awake()
     {
         anim = GetComponent<Animator>();
+        bigBlackPanel.enabled = true;
     }
 
     // Update is called once per frame
