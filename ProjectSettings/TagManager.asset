@@ -12,15 +12,17 @@ TagManager:
   - Tentacle
   - FlipSprite
   - SubCamBarrier
+  - Explosion
+  - PlayerMineExplosion
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  -
+  - 
   - Water
   - UI
-  -
-  -
+  - 
+  - 
   - Background
   - Submarine
   - Section Header
@@ -37,14 +39,14 @@ TagManager:
   - PlayerMine
   - EnemyMineExplosion
   - PlayerDamaged
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
