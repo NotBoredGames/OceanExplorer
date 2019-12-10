@@ -27,6 +27,7 @@ public class ExitSideAreaScript : MonoBehaviour
         // will need to resume enemy movement
         // will need to resume submarine movement
         LevelScrollControlScript.Scroll = true; // resumes level scrolling
+        RemoveCharacter.removeFromScene = true; // this works, I don't know why it's giving me an error. If no errors are here, ignore this message.
         Destroy(this.gameObject);
     }
 }

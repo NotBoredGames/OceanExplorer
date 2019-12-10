@@ -67,9 +67,10 @@ public class EnterSideAreaScript : MonoBehaviour
             }
 
             // if the player has found everyone! They find scrap!
-            else if (SubmarineSettingsScript.foundMarineBio == true)
+            else if (SubmarineSettingsScript.foundScrap == false)
             {
                 Instantiate(scrapPile);
+                SubmarineSettingsScript.foundScrap = true;
                 SubmarineSettingsScript.currentScrap += 100;
 
                 Destroy(this.gameObject); // removes vortex from level

@@ -72,6 +72,7 @@ public class SubmarineSettingsScript : MonoBehaviour
     public static bool foundWeaponsmith;
     public static bool foundScrapper;
     public static bool foundMarineBio;
+    public static bool foundScrap;
 
 
     // Start is called before the first frame update
