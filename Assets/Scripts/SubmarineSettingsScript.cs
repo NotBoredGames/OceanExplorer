@@ -83,7 +83,12 @@ public class SubmarineSettingsScript : MonoBehaviour
         currentBulletDamage = startingBulletDamage;
         currentMineDamage = startingMineDamage;
 
-        DontDestroyOnLoad(this.gameObject);
+        
+        if (FindObjectsOfType(GetType()).Length > 1)
+            Destroy(this.gameObject);
+        else
+            DontDestroyOnLoad(this.gameObject);
+            
     }
 
     // Update is called once per frame
