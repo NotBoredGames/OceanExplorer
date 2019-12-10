@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Animator))]
 public class UI_LevelIntroOutroScript : MonoBehaviour
@@ -12,6 +13,7 @@ public class UI_LevelIntroOutroScript : MonoBehaviour
     Animator anim;
 
     string levelIntroBool = "LevelIntroComplete";
+    string levelOutroBool = "StartLevelOutro";
 
     // Start is called before the first frame update
     void Awake()
@@ -31,4 +33,16 @@ public class UI_LevelIntroOutroScript : MonoBehaviour
         anim.SetBool(levelIntroBool, true);
         bigBlackPanel.enabled = false;
     }
+
+    public void LevelOutro()
+    {
+        bigBlackPanel.enabled = true;
+        anim.SetBool(levelOutroBool, true);
+    }
+
+    public void LoadNextLevel(int i)
+    {
+        SceneManager.LoadScene(i);
+    }
+
 }

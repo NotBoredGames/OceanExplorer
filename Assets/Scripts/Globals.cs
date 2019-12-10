@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Globals : MonoBehaviour
 {
+    [SerializeField]
+    string verticalGameplayCanvasString;
+
+    static GameObject verticalGameplayCanvas;
     // Start is called before the first frame update
     void Awake()
     {
+        verticalGameplayCanvas = GameObject.Find(verticalGameplayCanvasString);
     }
 
     // Update is called once per frame
@@ -37,5 +42,14 @@ public class Globals : MonoBehaviour
                 queue.Enqueue(t);
         }
         return null;
+    }
+
+    public static void LevelOutro(int nextLevel)
+    {
+        UI_LevelIntroOutroScript uiScript = verticalGameplayCanvas.GetComponent<UI_LevelIntroOutroScript>();
+        if (uiScript != null)
+        {
+            uiScript.LevelOutro();
+        }
     }
 }

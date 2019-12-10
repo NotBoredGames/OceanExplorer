@@ -9,6 +9,7 @@ public class LevelIntroOutroScript : MonoBehaviour
     Animator anim;
 
     string levelIntroBool = "LevelIntroComplete";
+    string levelOutroBool = "StartLevelOutro";
 
     // Start is called before the first frame update
     void Awake()

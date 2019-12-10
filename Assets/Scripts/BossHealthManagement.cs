@@ -100,5 +100,6 @@ public class BossHealthManagement : MonoBehaviour
     public void DestroyKraken()
     {
         Destroy(this.gameObject);
+        Globals.LevelOutro(1);
     }
 }
