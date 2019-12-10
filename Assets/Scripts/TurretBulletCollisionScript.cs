@@ -17,8 +17,8 @@ public class TurretBulletCollisionScript : MonoBehaviour
         //Debug.Log("Hit something");
         if (other.transform.tag == "Enemy")
         {
-            EnemyHealthScript enemyHP = other.gameObject.GetComponent<EnemyHealthScript>();
-            enemyHP.SetHealth(enemyHP.GetHealth() - damage);
+            Debug.Log("Oof");
+          //  Destroy(other.gameObject);
         }
 
         Destroy(this.gameObject);

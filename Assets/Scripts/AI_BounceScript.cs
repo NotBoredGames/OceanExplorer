@@ -15,8 +15,8 @@ public class AI_BounceScript : MonoBehaviour
     [Range(0, 20)]
     float speed = 5;
 
-    [SerializeField]
-    SubmarineSettingsScript subSettings;
+    //[SerializeField]
+    //SubmarineSettingsScript subSettings;
 
     Vector2 direction = new Vector2(1, 0);
 
@@ -32,18 +32,16 @@ public class AI_BounceScript : MonoBehaviour
     void Update()
     {
 
-
-            float yTranslate = 0;
+        float yTranslate = 0;
 
         if (inheritScroll)
             yTranslate = LevelScrollControlScript.GetScrollSpeedY(Time.timeSinceLevelLoad) * scrollRate * Time.deltaTime;
 
         float xTranslate = speed * direction.x * Time.deltaTime;
 
-        transform.Translate(xTranslate, yTranslate, 0);
-
-
-
+        if (LevelScrollControlScript.Scroll)
+            transform.Translate(xTranslate, yTranslate, 0);
+        
     }
 
     private void LateUpdate()
@@ -56,11 +54,13 @@ public class AI_BounceScript : MonoBehaviour
     {
         direction.x *= -1;
 
-
+        // DUPLICATE CODE - ALREADY EXISTS IN EnemyCollisionScript.cs
+        /*
         if (other.gameObject.tag == "Player")
         {
             subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
             Destroy(this.gameObject);
         }
+        */
     }
 }

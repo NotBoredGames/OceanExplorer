@@ -63,7 +63,7 @@ public class SubmarineSettingsScript : MonoBehaviour
 
     [BoxGroup("Other Settings")]
     [SerializeField]
-    int currentScrap = 0;
+    public static int currentScrap = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +83,12 @@ public class SubmarineSettingsScript : MonoBehaviour
         currentBulletDamage = startingBulletDamage;
         currentMineDamage = startingMineDamage;
 
-        DontDestroyOnLoad(this.gameObject);
+        
+        if (FindObjectsOfType(GetType()).Length > 1)
+            Destroy(this.gameObject);
+        else
+            DontDestroyOnLoad(this.gameObject);
+            
     }
 
     // Update is called once per frame
@@ -176,4 +181,17 @@ public class SubmarineSettingsScript : MonoBehaviour
     {
         return maxHP;
     }
+    /*
+    // sets the current amount of scrap after player picks it up
+    public void SetScrapTotal(int i)
+    {
+        currentScrap += i;
+    }
+
+    // returns total
+    public int GetScrapTotal()
+    {
+        return currentScrap;
+    }
+    */
 }

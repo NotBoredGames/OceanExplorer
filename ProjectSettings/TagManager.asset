@@ -16,11 +16,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  -
   - Water
   - UI
-  - 
-  - 
+  -
+  -
   - Background
   - Submarine
   - Section Header
@@ -34,17 +34,17 @@ TagManager:
   - Invincible
   - RadarViewable
   - ScriptActivator
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlayerMine
+  - EnemyMineExplosion
+  - PlayerDamaged
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
   m_SortingLayers:
   - name: Default
     uniqueID: 0

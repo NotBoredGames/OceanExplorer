@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5994782228678261135}
-  m_LocalRotation: {x: -0, y: -0, z: -0.32701144, w: 0.94502044}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4190910873597844971}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.175003}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!212 &5994782228678261129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 7792300368806779332}
   - component: {fileID: 7132473592054982533}
   - component: {fileID: 7132473592054982534}
+  - component: {fileID: 1099168799}
   m_Layer: 11
   m_Name: Starfish
   m_TagString: Enemy
@@ -209,7 +210,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 9}
+  m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
 --- !u!114 &7792300368806779332
 MonoBehaviour:
@@ -239,7 +240,7 @@ MonoBehaviour:
   inheritScroll: 1
   scrollRate: 4
   speed: 12
-  subSettings: {fileID: 0}
+  subControllerString: Submarine Info Controller
 --- !u!95 &7132473592054982534
 Animator:
   serializedVersion: 3
@@ -259,3 +260,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1099168799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7132473592054982532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 2
+  subControllerString: Submarine Info Controller

@@ -91,7 +91,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4165632600703791840
 RectTransform:
   m_ObjectHideFlags: 0
@@ -532,6 +532,8 @@ GameObject:
   - component: {fileID: 2833066630200165352}
   - component: {fileID: 2833066630200165353}
   - component: {fileID: 2833066630200165350}
+  - component: {fileID: 3613671637800370321}
+  - component: {fileID: 8773214149895406876}
   m_Layer: 5
   m_Name: Vertical UI_Canvas (Contains Actual UI)
   m_TagString: Untagged
@@ -561,6 +563,7 @@ RectTransform:
   - {fileID: 2492131715364671271}
   - {fileID: 2944854040947912699}
   - {fileID: 4165632600703791840}
+  - {fileID: 6359110467352832975}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -629,6 +632,38 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!95 &3613671637800370321
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833066630200165351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 22f253cafdb3d654c9bb96f970e1fae6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8773214149895406876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833066630200165351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa29097f0e678946a4ecec58eaa3399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bigBlackPanel: {fileID: 6166215652348478425}
 --- !u!1 &2833066630202647885
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40807d4423a0b2842adbdd273ddc66e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subSettings: {fileID: 0}
+  subControllerString: Submarine Info Controller
   childPrefixString: HP
   padding: 4
 --- !u!114 &2833066630305450030
@@ -2480,6 +2515,7 @@ GameObject:
   - component: {fileID: 2833066631007328396}
   - component: {fileID: 2833066631007328398}
   - component: {fileID: 2833066631007328399}
+  - component: {fileID: 7145443295428712952}
   m_Layer: 5
   m_Name: Scrap Number
   m_TagString: Untagged
@@ -2534,7 +2570,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 0000
+  m_text: 000000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2603,7 +2639,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2833066631007328399}
-    characterCount: 4
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -2626,6 +2662,19 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7145443295428712952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833066631007328397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0d003744cb9b34f95a46897e8a4933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subControllerString: Submarine Info Controller
 --- !u!1 &2833066631063214684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,7 +3611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bf47f1316bf3f748a42ac2d31c8234d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subSettings: {fileID: 0}
+  subControllerString: Submarine Info Controller
   childPrefixString: Mine
   padding: 4
 --- !u!114 &2833066631655364675
@@ -4883,6 +4932,80 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!1 &4422390502817852092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6359110467352832975}
+  - component: {fileID: 7562863261545162425}
+  - component: {fileID: 6166215652348478425}
+  m_Layer: 5
+  m_Name: Big Black Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &6359110467352832975
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422390502817852092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2833066630200165355}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7562863261545162425
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422390502817852092}
+  m_CullTransparentMesh: 0
+--- !u!114 &6166215652348478425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422390502817852092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &5339161426266781255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,7 +5097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2944854040947912699
 RectTransform:
   m_ObjectHideFlags: 0

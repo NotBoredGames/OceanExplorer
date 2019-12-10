@@ -19,19 +19,21 @@ public class MineExplosionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
+    // should probably change to have health/damage taken in objects themselves
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (destructibleTargets.ContainsLayer(other.gameObject.layer))
         {
+
             // Replace with a damage dealing function down the line
-            EnemyHealthScript enemyHP = other.gameObject.GetComponent<EnemyHealthScript>();
-            if (enemyHP != null)
-                enemyHP.SetHealth(enemyHP.GetHealth() - damage);
-            //else
-                //Destroy(other.gameObject);
+            // damage is done within the enemy objects themselves now
+            //    Destroy(other.gameObject);
+            //Debug.Log("Boom");
+
+
         }
     }
 

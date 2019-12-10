@@ -26,7 +26,7 @@ public class RadarDisplayScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (t >= 0)
             t -= Time.deltaTime;

@@ -10,6 +10,7 @@ public class HealthDisplayScript : MonoBehaviour
 {
 
     [SerializeField]
+    string subControllerString = "Submarine Info Controller";
     SubmarineSettingsScript subSettings;
 
     [InfoBox("Leave off final whitepace and any number (ie \"HP\", not \"HP \"")]
@@ -32,6 +33,12 @@ public class HealthDisplayScript : MonoBehaviour
 
     void Awake()
     {
+
+        subSettings = GameObject.Find(subControllerString).GetComponent<SubmarineSettingsScript>();
+
+        if (subSettings == null)
+            Debug.LogError("[[HealthDisplayScript]] Script on GameObject " + this.gameObject.name + " unable to find SubmarineSettingsScript!");
+
         containerWidth = this.gameObject.GetComponent<RectTransform>().rect.width;
         children = this.transform.GetComponentsInChildren<Image>();
 
