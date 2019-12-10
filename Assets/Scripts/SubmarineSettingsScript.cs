@@ -65,6 +65,15 @@ public class SubmarineSettingsScript : MonoBehaviour
     [SerializeField]
     public static int currentScrap = 0;
 
+
+    // for storing if a crew member has been found yet
+    // may want to store elsewhere for save system
+    public static bool foundEngineer;
+    public static bool foundWeaponsmith;
+    public static bool foundScrapper;
+    public static bool foundMarineBio;
+
+
     // Start is called before the first frame update
     void Start()
     {
