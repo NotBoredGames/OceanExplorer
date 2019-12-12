@@ -23,8 +23,8 @@ public class UI_LevelIntroOutroScript : MonoBehaviour
 
         if (FindObjectsOfType(GetType()).Length > 1)
             Destroy(this.gameObject);
-        else
-            DontDestroyOnLoad(this.gameObject);
+        //else
+            //DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
@@ -43,6 +43,12 @@ public class UI_LevelIntroOutroScript : MonoBehaviour
     {
         bigBlackPanel.enabled = true;
         anim.SetBool(levelOutroBool, true);
+    }
+
+    public void LoadSubHub()
+    {
+        Debug.Log("Running Animation Event LoadSubHub");
+        Globals.LoadSubHub();
     }
 
 }
