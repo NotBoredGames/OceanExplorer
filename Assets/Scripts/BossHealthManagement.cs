@@ -10,6 +10,8 @@ public class BossHealthManagement : MonoBehaviour
     public string subControllerString = "Submarine Info Controller";
     SubmarineSettingsScript subSettings;
 
+    public AudioClip bossMusic;
+
     Animator anim;
     float damageTakenTime = 2;
     string damageTakenBool = "DamageTaken";
@@ -28,6 +30,9 @@ public class BossHealthManagement : MonoBehaviour
 
         if (anim == null)
             Debug.LogError("[[BossHealthManagement]] Script on GameObject " + this.gameObject.name + " unable to find Animator component!");
+
+        if (bossMusic == null)
+            Debug.LogError("[[BossHealthManagement]] Script on GameObject " + this.gameObject.name + " need to have bossMusic set!");
     }
 
     // Update is called once per frame
@@ -72,6 +77,16 @@ public class BossHealthManagement : MonoBehaviour
         {
             target.gameObject.layer = LayerMask.NameToLayer("Enemy");
         }
+    }
+
+    public void StartBossMusic()
+    {
+        SoundManagerScript soundManager = GameObject.Find("SoundManager").GetComponent<SoundManagerScript>();
+        if (soundManager)
+        {
+            soundManager.PlayMusic(bossMusic);
+        }
+
     }
 
     public IEnumerator DeathActions()

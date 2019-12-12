@@ -643,6 +643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 20
   subControllerString: Submarine Info Controller
+  bossMusic: {fileID: 8300000, guid: 16a48bf7205ab67408b531cc40ad077b, type: 3}
   canTakeDamage: 0
 --- !u!1 &5150736840629234442
 GameObject:
