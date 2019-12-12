@@ -11,9 +11,6 @@ public class PlayerMineCollisionScript : MonoBehaviour
     GameObject mineExplosion;
 
     [SerializeField]
-    public AudioClip mineExplosion_sound;
-
-    [SerializeField]
     [Range(0, 50)]
     float explosionRadius = 10;
 
@@ -35,7 +32,6 @@ public class PlayerMineCollisionScript : MonoBehaviour
         Vector2 point = other.GetContact(0).point;
 
         Detonate(point);
-        SoundManagerScript.instance.PlaySingle(mineExplosion_sound);
     }
 
     public void Detonate(Vector2 _point)
