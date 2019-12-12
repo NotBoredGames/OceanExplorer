@@ -98,8 +98,9 @@ MonoBehaviour:
   playerBullet: {fileID: 4944119039928202625, guid: f6dc15228ec34e84eb92d85f365319d8,
     type: 3}
   turretReference: {fileID: 4343336523539850096}
-  subSettings: {fileID: 0}
+  subControllerString: Submarine Info Controller
   turretOffset: 2
+  shootSound: {fileID: 8300000, guid: de7ea031601091446bf67fe4481450c1, type: 3}
 --- !u!114 &4343336522083992453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +115,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMine: {fileID: 699024758033242908, guid: 524bd6c725c619642beffb634ad10677,
     type: 3}
-  subSettings: {fileID: 0}
+  subControllerString: Submarine Info Controller
+  mineBeep: {fileID: 8300000, guid: 160f2151d1d1d4649a2e4418f97a4fb9, type: 3}
+  mineExplosion_sound: {fileID: 8300000, guid: 4fcb3b0119919b946960c79f2fa308ba, type: 3}
 --- !u!114 &4343336522083992454
 MonoBehaviour:
   m_ObjectHideFlags: 0
