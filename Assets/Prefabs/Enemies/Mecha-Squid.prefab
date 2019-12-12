@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3977714530537601721}
   - component: {fileID: 3977714530537601723}
   - component: {fileID: 8854603035305826064}
+  - component: {fileID: 191522882}
   m_Layer: 11
   m_Name: Mecha-Squid
   m_TagString: Enemy
@@ -271,5 +272,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrap: {fileID: 5548790511834475519, guid: 316f52fe5747b054683763ffbd673c95, type: 3}
   HP: 6
   subControllerString: Submarine Info Controller
+--- !u!114 &191522882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3514013745177603250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913e1d4e0a57d91458dd67c5c60b5893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrap: {fileID: 5548790511834475519, guid: 316f52fe5747b054683763ffbd673c95, type: 3}
