@@ -68,6 +68,6 @@ public class Globals : MonoBehaviour
 
     public static void LoadSubHub()
     {
-        SceneManager.LoadScene("SubHub");
+
     }
 }

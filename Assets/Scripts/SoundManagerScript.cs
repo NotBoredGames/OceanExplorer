@@ -23,10 +23,7 @@ public class SoundManagerScript : MonoBehaviour
             Destroy(gameObject);
 
         //Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
-        if (FindObjectsOfType(GetType()).Length > 1)
-            Destroy(this.gameObject);
-        //else
-        //DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
 
@@ -52,13 +49,6 @@ public class SoundManagerScript : MonoBehaviour
 
         //Play the clip.
         efxSource.Play();
-    }
-
-    public void PlayMusic(AudioClip clip)
-    {
-        musicSource.clip = clip;
-        musicSource.loop = true;
-        musicSource.Play();
     }
 
 

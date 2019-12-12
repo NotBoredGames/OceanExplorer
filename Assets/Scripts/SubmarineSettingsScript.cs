@@ -20,7 +20,7 @@ public class SubmarineSettingsScript : MonoBehaviour
 
     [BoxGroup("Turret Settings")]
     [SerializeField]
-    int currentBulletDamage;
+    public int currentBulletDamage;
 
     [BoxGroup("Mine Settings")]
     [SerializeField]
@@ -28,7 +28,7 @@ public class SubmarineSettingsScript : MonoBehaviour
 
     [BoxGroup("Mine Settings")]
     [SerializeField]
-    int maxMines;
+    public int maxMines;
 
     [BoxGroup("Mine Settings")]
     [SerializeField]
@@ -56,7 +56,7 @@ public class SubmarineSettingsScript : MonoBehaviour
 
     [BoxGroup("Other Settings")]
     [SerializeField]
-    int maxHP;
+    public int maxHP;
 
     [BoxGroup("Other Settings")]
     [SerializeField]
@@ -78,6 +78,16 @@ public class SubmarineSettingsScript : MonoBehaviour
     public static bool foundScrapper;
     public static bool foundMarineBio;
     public static bool foundScrap;
+	
+	
+	public int eLvl;
+	public int wLvl;
+	public int nLvl;
+	public int sLvl;
+	public int mbLvl;
+	
+	public int subSpeed;
+	public int scrapIncrease;
 
 
     // Start is called before the first frame update
@@ -103,6 +113,16 @@ public class SubmarineSettingsScript : MonoBehaviour
             Destroy(this.gameObject);
         else
             DontDestroyOnLoad(this.gameObject);
+		
+				
+		eLvl=0;
+		wLvl=0;
+		nLvl=0;
+		sLvl=0;
+		mbLvl=0;
+		
+		subSpeed=25;
+		scrapIncrease=0;
             
     }
 

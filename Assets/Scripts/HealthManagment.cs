@@ -1,16 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class HealthManagment : MonoBehaviour
 {
 
     [SerializeField]
     string subControllerString = "Submarine Info Controller";
-
-    [SerializeField]
-    GameObject playerDeathExplosion;
 
     SubmarineSettingsScript subSettings;
 
@@ -20,8 +16,6 @@ public class HealthManagment : MonoBehaviour
 
         if (subSettings == null)
             Debug.LogError("[[HealthManagement]] Script on GameObject " + this.gameObject.name + " unable to find SubmarineSettingsScript!");
-
-        StartCoroutine(PlayerDead());
     }
 
     // player takes damage when hit by enemy mine explosion
@@ -31,7 +25,7 @@ public class HealthManagment : MonoBehaviour
         if (other.gameObject.tag == "Explosion")
         {
             subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
-         
+
         }
     }
 
@@ -58,6 +52,6 @@ public class HealthManagment : MonoBehaviour
     }
  
 
-    
+
 
 }

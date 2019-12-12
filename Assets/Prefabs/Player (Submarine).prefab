@@ -131,8 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subControllerString: Submarine Info Controller
-  playerDeathExplosion: {fileID: 2400009666010714752, guid: a303dce660ae1124f8dbc1bfadd4fe08,
-    type: 3}
 --- !u!114 &4343336522083992451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,7 +1964,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 84, y: 84}
+  m_Size: {x: 82, y: 82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
