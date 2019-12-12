@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyHealthManagment : MonoBehaviour
 {
+
+    [SerializeField]
+    GameObject scrap;
+
     public int HP;
 
     public string subControllerString = "Submarine Info Controller";
@@ -24,6 +28,7 @@ public class EnemyHealthManagment : MonoBehaviour
         // enemy will be destroyed
         if(HP <= 0)
         {
+            Instantiate(scrap, this.gameObject.transform.position, this.gameObject.transform.rotation);
             Destroy(gameObject);
         }
     }
