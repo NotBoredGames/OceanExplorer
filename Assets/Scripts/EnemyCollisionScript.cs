@@ -40,11 +40,22 @@ public class EnemyCollisionScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.tag == "Enemy" && canTakeDamage)
+        if (canTakeDamage)
         {
-            Destroy(other.gameObject);
-            subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
-            StartCoroutine(DamageAnimation());
+            if (other.gameObject.tag == "Enemy")
+            {
+                Destroy(other.gameObject);
+                subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
+                StartCoroutine(DamageAnimation());
+            }
+            else if (other.gameObject.tag == "Tentacle")
+            {
+                AttackingTentacleScript attackScript = other.gameObject.GetComponent<AttackingTentacleScript>();
+                if (attackScript != null)
+                {
+                    StartCoroutine(DamageAnimation());
+                }
+            }
         }
 
     }
