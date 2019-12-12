@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManagment : MonoBehaviour
 {
 
     [SerializeField]
     string subControllerString = "Submarine Info Controller";
+
+    [SerializeField]
+    GameObject playerDeathExplosion;
 
     SubmarineSettingsScript subSettings;
 

@@ -78,8 +78,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   submarineOBJ: {fileID: 0}
   spriteGunPivot: {fileID: 4343336523539850096}
-  moveAcceleration: 35
   maxSpeed: 25
+  moveAcceleration: 35
   subCenterString: Sub_Center
   subCollider: {fileID: 4343336523305457162}
 --- !u!114 &4343336522083992455
@@ -131,6 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subControllerString: Submarine Info Controller
+  playerDeathExplosion: {fileID: 2400009666010714752, guid: a303dce660ae1124f8dbc1bfadd4fe08,
+    type: 3}
 --- !u!114 &4343336522083992451
 MonoBehaviour:
   m_ObjectHideFlags: 0
