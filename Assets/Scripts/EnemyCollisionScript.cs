@@ -51,7 +51,7 @@ public class EnemyCollisionScript : MonoBehaviour
             else if (other.gameObject.tag == "Tentacle")
             {
                 AttackingTentacleScript attackScript = other.gameObject.GetComponent<AttackingTentacleScript>();
-                if (attackScript != null && attackScript.isAttacking)
+                if (attackScript != null)
                 {
                     StartCoroutine(DamageAnimation());
                 }
