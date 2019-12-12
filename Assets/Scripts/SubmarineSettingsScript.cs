@@ -63,8 +63,12 @@ public class SubmarineSettingsScript : MonoBehaviour
     int currentHP;
 
     [BoxGroup("Other Settings")]
-    [SerializeField]
+    [ShowInInspector]
     public static int currentScrap = 0;
+
+    [BoxGroup("Other Settings")]
+    [ShowInInspector]
+    public static int scrapCollectionMultiplier = 1;
 
 
     // for storing if a crew member has been found yet
@@ -100,6 +104,17 @@ public class SubmarineSettingsScript : MonoBehaviour
         else
             DontDestroyOnLoad(this.gameObject);
             
+    }
+
+    public void Reset()
+    {
+        scrapCollectionMultiplier = 1;
+        currentScrap = 0;
+        maxMines = startingMines;
+        maxHP = startingHP;
+        currentBulletDamage = startingBulletDamage;
+        currentMineDamage = startingMineDamage;
+
     }
 
     // Set variables here that may change in between levels (ie from upgrade during hub level)

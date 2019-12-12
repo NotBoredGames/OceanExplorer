@@ -43,7 +43,17 @@ public class HealthManagment : MonoBehaviour
         Debug.Log("DEAD");
         GameObject explosion = Instantiate(playerDeathExplosion);
         explosion.transform.position = transform.position;
-        yield return new WaitForSeconds(0.5f);
+        GetComponentInChildren<SpriteRenderer>().color = new Color(1,1,1,0);
+
+        yield return new WaitForSeconds(0.375f);
+
+        GameObject subController = GameObject.Find("Submarine Info Controller");
+        if (subController)
+        {
+            subController.GetComponent<SubmarineSettingsScript>().Reset();
+            Destroy(subController);
+        }
+
         SceneManager.LoadScene("TitleScreen");
     }
  
