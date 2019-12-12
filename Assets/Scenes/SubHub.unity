@@ -1569,14 +1569,19 @@ MonoBehaviour:
   playerScrapAmount: 10000000
   healthAmt: 0
   engineerLevel: 0
+  engineerFound: 0
   bombAmt: 0
   weaponsmithLevel: 0
+  weaponsmithFound: 0
   subSpeed: 0
   navigatorLevel: 0
+  navigatorFound: 0
   scrapIncrease: 0
   scrapperLevel: 0
+  scrapperFound: 0
   damageAmt: 0
   marineBiologistLevel: 0
+  marineBiologistFound: 0
 --- !u!4 &813498426
 Transform:
   m_ObjectHideFlags: 0
