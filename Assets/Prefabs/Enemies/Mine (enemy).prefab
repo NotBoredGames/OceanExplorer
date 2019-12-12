@@ -191,9 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f2e1d73c5299a4289876e03cd50146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subControllerString: Submarine Info Controller
   mineExplosion: {fileID: 283398579918605638, guid: 504adc3c73405c14d90b44b361415431,
-    type: 3}
-  Enemy_mineExplosion_sound: {fileID: 8300000, guid: 4fcb3b0119919b946960c79f2fa308ba,
     type: 3}
   explosionRadius: 10
 --- !u!114 &7178439748054306676

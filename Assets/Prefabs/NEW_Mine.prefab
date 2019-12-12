@@ -72,7 +72,6 @@ MonoBehaviour:
   subSettings: {fileID: 0}
   mineExplosion: {fileID: 2400009666010714752, guid: a303dce660ae1124f8dbc1bfadd4fe08,
     type: 3}
-  mineExplosion_sound: {fileID: 8300000, guid: 4fcb3b0119919b946960c79f2fa308ba, type: 3}
   explosionRadius: 15
 --- !u!61 &5346699401871525698
 BoxCollider2D:
