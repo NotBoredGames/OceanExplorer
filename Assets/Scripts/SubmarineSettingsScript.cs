@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.SceneManagement;
 
 public class SubmarineSettingsScript : MonoBehaviour
 {
@@ -99,6 +100,25 @@ public class SubmarineSettingsScript : MonoBehaviour
         else
             DontDestroyOnLoad(this.gameObject);
             
+    }
+
+    // Set variables here that may change in between levels (ie from upgrade during hub level)
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnLevelFinishedLoading;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+    }
+
+    void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("[[SubmarineSettingsScript]] Level Loaded: " + scene.name + " [LoadSceneMode = " + mode + "]");
+
+        currentHP = maxHP;
+        currentMines = maxMines;
     }
 
     // Update is called once per frame
