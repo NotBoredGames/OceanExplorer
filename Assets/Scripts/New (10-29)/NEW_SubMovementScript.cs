@@ -28,7 +28,7 @@ public class NEW_SubMovementScript : MonoBehaviour
 
     float cappedY = 0;
 
-    void Start()
+    void Awake()
     {
         body = GetComponent<Rigidbody2D>();
     }
@@ -42,7 +42,6 @@ public class NEW_SubMovementScript : MonoBehaviour
             horizontal = 0;
 
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
-
     }
 
     void FixedUpdate()

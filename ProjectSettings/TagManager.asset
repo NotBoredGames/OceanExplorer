@@ -11,6 +11,7 @@ TagManager:
   - SubmarineSprite
   - Tentacle
   - FlipSprite
+  - SubCamBarrier
   - Explosion
   - PlayerMineExplosion
   layers:
@@ -37,7 +38,7 @@ TagManager:
   - ScriptActivator
   - PlayerMine
   - EnemyMineExplosion
-  - 
+  - PlayerDamaged
   - 
   - 
   - 

@@ -6,15 +6,22 @@ using TMPro;
 public class DisplayScrapNumber : MonoBehaviour
 {
     [SerializeField]
+    string subControllerString = "Submarine Info Controller";
+
     SubmarineSettingsScript subSettings;
 
     private int m_CurrentScrap;
-    private string display = "{0}"; // has to be in {} for a number
+    private string display = "{0:D6}"; // has to be in {} for a number
     private TextMeshProUGUI m_Text;
 
     
-    void Start()
+    void Awake()
     {
+        subSettings = GameObject.Find(subControllerString).GetComponent<SubmarineSettingsScript>();
+
+        if (subSettings == null)
+            Debug.LogError("[[DisplayScrapNumber]] Script on GameObject " + this.gameObject.name + " unable to find SubmarineSettingsScript!");
+
         m_Text = GetComponent<TextMeshProUGUI>();
     }
 

@@ -31,7 +31,7 @@ public class EnemyHealthManagment : MonoBehaviour
     // enemy takes damage when hit by mine explosion or turret fire
     private void OnCollisionEnter2D(Collision2D other)
     {
-
+        Debug.Log(this.gameObject.name + " had collision with " + other.gameObject.name);
         //if hit by player turret fire
         if (other.gameObject.tag == "PlayerBullet")
         {

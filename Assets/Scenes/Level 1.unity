@@ -369,161 +369,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &29516883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 29516884}
-  - component: {fileID: 29516885}
-  m_Layer: 15
-  m_Name: Gun_Pivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &29516884
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29516883}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.25, y: -0.0625, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.025}
-  m_Children:
-  - {fileID: 510438628}
-  m_Father: {fileID: 1908969748}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &29516885
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29516883}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f5ec4422812a00e40bb5aa9229a9e1d9, type: 3}
-  m_Color: {r: 0.24619699, g: 1, b: 0, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 6.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1001 &40283178
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 901957044}
-    m_Modifications:
-    - target: {fileID: 6837798798964084818, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_Name
-      value: Vortex Portal 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -288
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4348
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: eb5c1e6fc2b86f84fa548fe5c59fd230, type: 3}
---- !u!4 &40283179 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6837798798964084817, guid: eb5c1e6fc2b86f84fa548fe5c59fd230,
-    type: 3}
-  m_PrefabInstance: {fileID: 40283178}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &53216303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +878,19 @@ BoxCollider2D:
     type: 3}
   m_PrefabInstance: {fileID: 1440932236}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &137217382
+--- !u!114 &137217384 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4343336523655873100, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4343336523518756644}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0e230e81a2f3148b6986fcb2c57e81, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &183670177
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1041,85 +898,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 137217383}
-  - component: {fileID: 137217386}
-  - component: {fileID: 137217385}
-  - component: {fileID: 137217384}
-  m_Layer: 15
-  m_Name: Sub Sprite
-  m_TagString: Player
+  - component: {fileID: 183670178}
+  - component: {fileID: 183670179}
+  m_Layer: 19
+  m_Name: Radar Target
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &137217383
+--- !u!4 &183670178
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137217382}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 183670177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children:
-  - {fileID: 550666302}
-  m_Father: {fileID: 1788658854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 109826626}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &137217384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137217382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d0e230e81a2f3148b6986fcb2c57e81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 2
-  blurSize: 2
-  color: {r: 1, g: 1, b: 1, a: 1}
-  blurAlphaMultiplier: 1
-  blurAlphaChoke: 0
-  invertBlur: 0
-  alphaThreshold: 0.05
-  buffer: 0
-  includeChildren: 0
-  childLayers:
-    serializedVersion: 2
-    m_Bits: 1
-  ignoreChildNames: []
-  sortMethod: 0
-  isAnimated: 1
-  useExportedFrame: 0
-  customFrameName: 
-  generatesOnStart: 1
-  generatesOnValidate: 1
---- !u!114 &137217385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137217382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f0cbd0e5a76f145a4310369e7f572b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderTexture: {fileID: 8400000, guid: fb6130e9b2a354243885f71a20fe77e8, type: 2}
-  spriteRefreshRate: 30
-  spriteFilterMode: 0
---- !u!212 &137217386
+--- !u!212 &183670179
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137217382}
+  m_GameObject: {fileID: 183670177}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1130,7 +938,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2526f7934a4425f4bb24dd0b061a0b55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1155,13 +963,13 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 80, y: 80}
+  m_Size: {x: 200, y: 200}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &183670177
+--- !u!1 &189229379
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1417,7 +1225,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1436,11 +1244,11 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_BonesAABB: []
   m_VariableBoneCountWeights:
-    m_Data: 
+    m_Data:
   m_MeshCompression: 0
   m_IsReadable: 1
   m_KeepVertices: 0
@@ -1514,66 +1322,66 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 5.8499994, y: 5.8499985, z: 0}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: 1
   m_StreamData:
     offset: 0
     size: 0
-    path: 
+    path:
 --- !u!1 &196352092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,7 +1592,7 @@ Sprite:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Rect:
     serializedVersion: 2
     x: 0
@@ -1797,8 +1605,8 @@ Sprite:
   m_Pivot: {x: 0.5, y: 0.5}
   m_Extrude: 0
   m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
+  m_AtlasName:
+  m_PackingTag:
   m_RenderDataKey:
     00000000000000000000000000000000: 0
   m_AtlasTags: []
@@ -1987,7 +1795,7 @@ Sprite:
     downscaleMultiplier: 1
   m_PhysicsShape: []
   m_Bones: []
-  m_SpriteID: 
+  m_SpriteID:
 --- !u!1 &259390203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,7 +2095,7 @@ PrefabInstance:
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
         type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: ab704343a083a444ba9b9285b62ed539,
         type: 3}
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
@@ -2624,8 +2432,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c2d849944c49f439c61bc282acabbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inheritScroll: 1
   scrollRate: 3
   speed: 2
@@ -2635,7 +2443,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -2668,7 +2476,7 @@ Texture2D:
   m_StreamData:
     offset: 0
     size: 0
-    path: 
+    path:
 --- !u!1 &435923849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,8 +2688,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41d70bc3a926efd45a7e8abe3483ea5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   triggeredOBJs:
   - {fileID: 0}
   scriptsToActivate:
@@ -2897,7 +2705,217 @@ MonoBehaviour:
     m_Bits: 210944
   printOnEnter: 0
   printOnExit: 0
---- !u!1 &447939185
+--- !u!213 &456101730
+Sprite:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name:
+  m_Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 84
+    height: 84
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 1
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 0
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RenderDataKey:
+    00000000000000000000000000000000: 0
+  m_AtlasTags: []
+  m_SpriteAtlas: {fileID: 0}
+  m_RD:
+    serializedVersion: 3
+    texture: {fileID: 1975642294}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000028c20000284200000000000028420000284200000000000028c2000028c20000000000002842000028c200000000000000000000803f0000803f0000803f00000000000000000000803f00000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 84
+      height: 84
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 1, y: 42, z: 1, w: 42}
+    downscaleMultiplier: 1
+  m_AtlasRD:
+    serializedVersion: 3
+    texture: {fileID: 1975642294}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000028c20000284200000000000028420000284200000000000028c2000028c20000000000002842000028c2000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 84
+      height: 84
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 1, y: 42, z: 1, w: 42}
+    downscaleMultiplier: 1
+  m_PhysicsShape: []
+  m_Bones: []
+  m_SpriteID:
+--- !u!1 &457992565
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3106,18 +3124,18 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471462091}
+  m_GameObject: {fileID: 457992565}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c83ee69c959bafc47a5a7ce0b0c19745, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3128,7 +3146,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
+  m_StitchLightmapSeams: 1
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3147,8 +3165,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3d3603a4944fb94694f1dc6fd4ed79d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   idle: 0
   lightEnabled: 1
   staticLight: 0
@@ -4853,7 +4871,7 @@ PrefabInstance:
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
         type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: ab704343a083a444ba9b9285b62ed539,
         type: 3}
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
@@ -4910,8 +4928,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9420f793bd6cb54b90d4e20ed564a16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   aimTurretScript: {fileID: 5193909397193364311}
 --- !u!1 &517164844
 GameObject:
@@ -5134,17 +5152,17 @@ PrefabInstance:
     - target: {fileID: 5607668482453139989, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: target
-      value: 
+      value:
       objectReference: {fileID: 1788658854}
     - target: {fileID: 5607668482453139989, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     - target: {fileID: 5607668482453139990, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17688bd74b37a3d41b44acdcc275b701, type: 3}
@@ -5486,15 +5504,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550666301}
+  m_GameObject: {fileID: 535605795}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 255, y: -6012, z: 0}
+  m_LocalScale: {x: 54.578896, y: 50.250492, z: 10}
   m_Children: []
-  m_Father: {fileID: 137217383}
-  m_RootOrder: 0
+  m_Father: {fileID: 901957044}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &550666303
+--- !u!114 &535605797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535605795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c65ab9e87345d44ade3a66698f4b9a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!50 &535605798
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535605795}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!58 &535605799
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535605795}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000023841858, y: 0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.82
+--- !u!114 &535605800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535605795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c506e6d438351104e87eb1e4cd16964d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  speed: 100
+--- !u!212 &535605801
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5511,7 +5591,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1191556903}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5793,7 +5873,7 @@ PrefabInstance:
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
         type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: ab704343a083a444ba9b9285b62ed539,
         type: 3}
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
@@ -5836,8 +5916,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -5855,8 +5935,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -6052,8 +6132,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scrollRate: 4
 --- !u!4 &620653718
 Transform:
@@ -6109,8 +6189,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   profile: {fileID: 11400000, guid: 0fba290f8a186254aa46cdd18895085d, type: 2}
 --- !u!81 &622635584
 AudioListener:
@@ -6217,6 +6297,8 @@ GameObject:
   m_Component:
   - component: {fileID: 636835469}
   - component: {fileID: 636835468}
+  - component: {fileID: 636835471}
+  - component: {fileID: 636835470}
   m_Layer: 0
   m_Name: Level Controller
   m_TagString: Untagged
@@ -6234,8 +6316,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dc02dce1bbb65d4e9874b1ab512f7d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   setScrollDirection: 1
   setScrollX:
     serializedVersion: 2
@@ -6285,7 +6367,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  setScroll: 1
 --- !u!4 &636835469
 Transform:
   m_ObjectHideFlags: 0
@@ -6300,6 +6381,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &636835470
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636835467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dabfbb7d1f29e3439265e529f2794b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &636835471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636835467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f5b9da6da3a9d41b680e8f96711ef4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!61 &640009482 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 3166333160708732007, guid: 6020935f420aa7c498dd08f4acbe4573,
@@ -6782,7 +6894,7 @@ PrefabInstance:
     - target: {fileID: 7132473592054982533, guid: 3382605f57471824f8564578e653fd4a,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3382605f57471824f8564578e653fd4a, type: 3}
@@ -6865,6 +6977,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!28 &824295947
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name:
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 2
+  m_Width: 80
+  m_Height: 80
+  m_CompleteImageSize: 25600
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  image data: 25600
+  _typelessdata: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff00000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000987f77ff987f77ff987f77ff987f77ff987f77ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff00000000987f77ff987f77ff987f77ff987f77ff987f77ff0000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff0000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff0000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff37302dff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff987f77ff987f77ff987f77ff987f77ff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ffccbeafffccbeafffccbeafffccbeafff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff0000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ffccbeafffccbeafffccbeafffccbeafffccbeafffccbeafff987f77ff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ffccbeafffccbeafffccbeafffccbeafff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff37302dff37302dffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ffaad0e0ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037302dff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff000000000000000000000000987f77ff987f77ff987f77ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff0000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff0000000000000000000000000000000000000000000000000000000037302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff37302dff987f77ff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff37302dff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff00000000987f77ff000000000000000000000000987f77ff987f77ff0000000000000000000000000000000000000000987f77ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff00000000987f77ff00000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff000000000000000000000000987f77ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff00000000987f77ff00000000987f77ff987f77ff987f77ff987f77ff987f77ff987f77ff000000000000000000000000987f77ff987f77ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff00000000987f77ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff987f77ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff00000000987f77ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000987f77ff987f77ff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_StreamData:
+    offset: 0
+    size: 0
+    path:
 --- !u!1 &828423647
 GameObject:
   m_ObjectHideFlags: 0
@@ -6893,8 +7045,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62e0722dd3744ba4e880e2209b1c2f05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   renderDelay: 3
 --- !u!20 &828423649
 Camera:
@@ -7078,88 +7230,8 @@ PrefabInstance:
     - target: {fileID: 2833066630200165352, guid: c48d6d72190c1b64298d270f5a4f5806,
         type: 3}
       propertyPath: m_Camera
-      value: 
+      value:
       objectReference: {fileID: 1772198140}
-    - target: {fileID: 2833066631791271449, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631791271449, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631791271449, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631791271449, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631791271449, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630204758415, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630204758415, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630204758415, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630204758415, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630204758415, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631815739269, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631815739269, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631815739269, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631815739269, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631815739269, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630305450028, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: subSettings
-      value: 
-      objectReference: {fileID: 847314152}
     - target: {fileID: 2833066630316756019, guid: c48d6d72190c1b64298d270f5a4f5806,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -7460,36 +7532,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2833066630793976474, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630793976474, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630793976474, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630793976474, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630793976474, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631655364672, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: subSettings
-      value: 
-      objectReference: {fileID: 847314152}
     - target: {fileID: 2833066630335749412, guid: c48d6d72190c1b64298d270f5a4f5806,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -7688,83 +7730,13 @@ PrefabInstance:
     - target: {fileID: 2833066630473142013, guid: c48d6d72190c1b64298d270f5a4f5806,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631094289296, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631094289296, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631094289296, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631094289296, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2833066631803098817, guid: c48d6d72190c1b64298d270f5a4f5806,
         type: 3}
       propertyPath: renderScript
-      value: 
+      value:
       objectReference: {fileID: 828423648}
-    - target: {fileID: 2833066630346257478, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630346257478, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630346257478, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630346257478, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066630346257478, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631007328399, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631007328399, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631007328399, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631007328399, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2833066631007328399, guid: c48d6d72190c1b64298d270f5a4f5806,
-        type: 3}
-      propertyPath: m_text
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c48d6d72190c1b64298d270f5a4f5806, type: 3}
 --- !u!1 &847314151
@@ -7795,8 +7767,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c5e441502ae2204f94132787b439625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   shotDelay: 0.375
   bulletSpeed: 75
   startingBulletDamage: 1
@@ -7835,8 +7807,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d7a60f2c551b5c4c9afc50d91ab16ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _outlineColor: {r: 1, g: 1, b: 1, a: 1}
   spriteOutline: {fileID: 137217384}
   _paintMat: {fileID: 2100000, guid: 7df428b0d80c473409b4d951e3a8baf0, type: 2}
@@ -7844,142 +7816,6 @@ MonoBehaviour:
   submarinePatterns: []
   patternList: []
   randomizeOutlineColor: 1
---- !u!1 &863520992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 863520993}
-  - component: {fileID: 863520994}
-  m_Layer: 19
-  m_Name: Radar Target
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &863520993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863520992}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 4, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1788658854}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &863520994
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863520992}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 2db2e7dfb7f6526408a09075a088c1db, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c27b8f159e903f43beef8c6d93c0696, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 200, y: 200}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &868929837
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 868929839}
-  - component: {fileID: 868929838}
-  m_Layer: 15
-  m_Name: PlayerCollider
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &868929838
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868929837}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.375}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.2, y: 3.375}
-  m_EdgeRadius: 0
---- !u!4 &868929839
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868929837}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1788658854}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &901957042
 GameObject:
   m_ObjectHideFlags: 0
@@ -8008,8 +7844,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scrollRate: 4
 --- !u!4 &901957044
 Transform:
@@ -8183,8 +8019,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scrollRate: 0.13
 --- !u!4 &926937367
 Transform:
@@ -8430,17 +8266,17 @@ PrefabInstance:
     - target: {fileID: 5607668482453139989, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: target
-      value: 
+      value:
       objectReference: {fileID: 1788658854}
     - target: {fileID: 5607668482453139989, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     - target: {fileID: 5607668482453139990, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17688bd74b37a3d41b44acdcc275b701, type: 3}
@@ -8800,8 +8636,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c2d849944c49f439c61bc282acabbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inheritScroll: 1
   scrollRate: 3
   speed: 2
@@ -8827,8 +8663,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c2d849944c49f439c61bc282acabbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inheritScroll: 1
   scrollRate: 3
   speed: 2
@@ -8948,7 +8784,7 @@ PrefabInstance:
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
         type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: ab704343a083a444ba9b9285b62ed539,
         type: 3}
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
@@ -9482,8 +9318,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c2d849944c49f439c61bc282acabbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inheritScroll: 1
   scrollRate: 3
   speed: 2
@@ -9716,7 +9552,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -9749,7 +9585,7 @@ Texture2D:
   m_StreamData:
     offset: 0
     size: 0
-    path: 
+    path:
 --- !u!4 &1160931332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6267384562258611445, guid: 9db8fba96c87eec48a752ed04bed0f0c,
@@ -9826,7 +9662,7 @@ PrefabInstance:
     - target: {fileID: 7178439748054306673, guid: e698bd9ab2860f742af3833f0b6cd644,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e698bd9ab2860f742af3833f0b6cd644, type: 3}
@@ -10073,6 +9909,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1165971729}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1173400405
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Outline
+  m_Shader: {fileID: 4800000, guid: 7449e1840806d044da6bfedbd5febcf2, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaThreshold: 0.05
+    - _BlurAlphaChoke: 0
+    - _BlurAlphaMultiplier: 1
+    - _BlurSize: 2
+    - _Buffer: 0
+    - _InvertBlur: 0
+    - _Size: 2
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1179852110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6267384562258611445, guid: 9db8fba96c87eec48a752ed04bed0f0c,
@@ -10467,6 +10337,216 @@ Transform:
   m_Father: {fileID: 1532240803}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!213 &1209461858
+Sprite:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name:
+  m_Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 80
+    height: 80
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 1
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 0
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RenderDataKey:
+    00000000000000000000000000000000: 0
+  m_AtlasTags: []
+  m_SpriteAtlas: {fileID: 0}
+  m_RD:
+    serializedVersion: 3
+    texture: {fileID: 824295947}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000020c20000204200000000000020420000204200000000000020c2000020c20000000000002042000020c200000000000000000000803f0000803f0000803f00000000000000000000803f00000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 80
+      height: 80
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 1, y: 40, z: 1, w: 40}
+    downscaleMultiplier: 1
+  m_AtlasRD:
+    serializedVersion: 3
+    texture: {fileID: 824295947}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000020c20000204200000000000020420000204200000000000020c2000020c20000000000002042000020c2000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 80
+      height: 80
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 0
+    uvTransform: {x: 1, y: 40, z: 1, w: 40}
+    downscaleMultiplier: 1
+  m_PhysicsShape: []
+  m_Bones: []
+  m_SpriteID:
 --- !u!1001 &1233019641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10655,8 +10735,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f1b91a9e224f946a2e80ec8f8180f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scrollRate: 2
 --- !u!4 &1247140533
 Transform:
@@ -10727,25 +10807,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1263491831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2833066631007328397, guid: c48d6d72190c1b64298d270f5a4f5806,
-    type: 3}
-  m_PrefabInstance: {fileID: 829485124}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1263491835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263491831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0d003744cb9b34f95a46897e8a4933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subSettings: {fileID: 847314152}
 --- !u!1001 &1267426738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10900,7 +10961,7 @@ PrefabInstance:
     - target: {fileID: 7178439748054306673, guid: e698bd9ab2860f742af3833f0b6cd644,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e698bd9ab2860f742af3833f0b6cd644, type: 3}
@@ -10974,12 +11035,12 @@ PrefabInstance:
     - target: {fileID: 5607668482453139989, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: target
-      value: 
+      value:
       objectReference: {fileID: 1788658854}
     - target: {fileID: 5607668482453139989, guid: 17688bd74b37a3d41b44acdcc275b701,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17688bd74b37a3d41b44acdcc275b701, type: 3}
@@ -11843,68 +11904,68 @@ PrefabInstance:
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.Prefab
-      value: 
+      value:
       objectReference: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 1739591754}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 1879587636}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 1124633799}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1743315025}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[4]
-      value: 
+      value:
       objectReference: {fileID: 1690906722}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[5]
-      value: 
+      value:
       objectReference: {fileID: 265684751}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[6]
-      value: 
+      value:
       objectReference: {fileID: 640009482}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[7]
-      value: 
+      value:
       objectReference: {fileID: 2111375037}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[8]
-      value: 
+      value:
       objectReference: {fileID: 132396963}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[9]
-      value: 
+      value:
       objectReference: {fileID: 525882747}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[10]
-      value: 
+      value:
       objectReference: {fileID: 1442648935}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[11]
-      value: 
+      value:
       objectReference: {fileID: 2079456506}
     - target: {fileID: 4209859922219032868, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
@@ -12128,7 +12189,7 @@ PrefabInstance:
     - target: {fileID: 5658263151344223945, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
       propertyPath: thisObjectRightHereOfficer
-      value: 
+      value:
       objectReference: {fileID: 21150320}
     - target: {fileID: 571396880634656434, guid: 6020935f420aa7c498dd08f4acbe4573,
         type: 3}
@@ -12615,8 +12676,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c2d849944c49f439c61bc282acabbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inheritScroll: 1
   scrollRate: 3
   speed: 2
@@ -13276,8 +13337,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3d3603a4944fb94694f1dc6fd4ed79d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   idle: 0
   lightEnabled: 1
   staticLight: 0
@@ -15203,7 +15264,7 @@ Sprite:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   m_Rect:
     serializedVersion: 2
     x: 0
@@ -15216,8 +15277,8 @@ Sprite:
   m_Pivot: {x: 0.5, y: 0.5}
   m_Extrude: 0
   m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
+  m_AtlasName:
+  m_PackingTag:
   m_RenderDataKey:
     00000000000000000000000000000000: 0
   m_AtlasTags: []
@@ -15406,7 +15467,7 @@ Sprite:
     downscaleMultiplier: 1
   m_PhysicsShape: []
   m_Bones: []
-  m_SpriteID: 
+  m_SpriteID:
 --- !u!61 &1690906722 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 1469595524196089979, guid: 6020935f420aa7c498dd08f4acbe4573,
@@ -15751,7 +15812,7 @@ PrefabInstance:
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
         type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: ab704343a083a444ba9b9285b62ed539,
         type: 3}
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
@@ -15946,8 +16007,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40c94dace9a037b4d826c6793c809404, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
+  verticalGameplayCanvasString: Vertical UI_Canvas (Contains Actual UI)
 --- !u!4 &1780076662
 Transform:
   m_ObjectHideFlags: 0
@@ -16042,114 +16104,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1786843215}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1788658848
+--- !u!1 &1788658848 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1788658854}
-  - component: {fileID: 1788658853}
-  - component: {fileID: 1788658852}
-  - component: {fileID: 1788658851}
-  - component: {fileID: 1788658849}
-  - component: {fileID: 1788658850}
-  - component: {fileID: 1788658855}
-  m_Layer: 15
-  m_Name: Player (Submarine)
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1788658849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788658848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b958f9cbaaa9d8943a5c2521fba6fd82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMine: {fileID: 699024758033242908, guid: 524bd6c725c619642beffb634ad10677,
+  m_CorrespondingSourceObject: {fileID: 4343336522083992452, guid: a5c6ad936392a974bb5b30549c9cb1f2,
     type: 3}
-  subSettings: {fileID: 847314152}
---- !u!114 &1788658850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_PrefabInstance: {fileID: 4343336523518756644}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788658848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59bcd4ae70fc0fd49a7068eed6b041a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subControllerString: Submarine Info Controller
---- !u!114 &1788658851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788658848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 125b1c135c7b85548910d6bd56824b32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  submarineOBJ: {fileID: 5193909397193364310}
-  playerBullet: {fileID: 4944119039928202625, guid: f6dc15228ec34e84eb92d85f365319d8,
-    type: 3}
-  turretReference: {fileID: 29516884}
-  subSettings: {fileID: 847314152}
-  turretOffset: 2
---- !u!114 &1788658852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788658848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee02b01d969d9534f8db0ae11e740695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  submarineOBJ: {fileID: 5193909397193364310}
-  spriteGunPivot: {fileID: 29516884}
-  moveAcceleration: 35
-  maxSpeed: 25
-  subCenterString: Sub_Center
-  subCollider: {fileID: 868929838}
---- !u!50 &1788658853
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788658848}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 1
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 2
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!4 &1788658854
+--- !u!4 &1788658854 stripped
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16174,20 +16135,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788658848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e43d910e1da83c54684d018695fb24b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subControllerString: Submarine Info Controller
 --- !u!43 &1841475058
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name:
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16206,11 +16160,11 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_BonesAABB: []
   m_VariableBoneCountWeights:
-    m_Data: 
+    m_Data:
   m_MeshCompression: 0
   m_IsReadable: 1
   m_KeepVertices: 0
@@ -16284,66 +16238,66 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: -6.452916, y: 25.00001, z: 0}
     m_Extent: {x: 6.452916, y: 25.00001, z: 0}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: 1
   m_StreamData:
     offset: 0
     size: 0
-    path: 
+    path:
 --- !u!4 &1862479232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6267384562258611445, guid: 9db8fba96c87eec48a752ed04bed0f0c,
@@ -16435,37 +16389,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1908969747
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1908969748}
-  m_Layer: 15
-  m_Name: Sub_Center
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1908969748
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908969747}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 29516884}
-  m_Father: {fileID: 1788658854}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914479790
 GameObject:
   m_ObjectHideFlags: 0
@@ -16930,7 +16853,7 @@ PrefabInstance:
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
         type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: ab704343a083a444ba9b9285b62ed539,
         type: 3}
     - target: {fileID: 7319478219971657446, guid: c4155bbdaad8cfc418a4baaf3e52210c,
@@ -16945,6 +16868,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4155bbdaad8cfc418a4baaf3e52210c, type: 3}
+--- !u!28 &1975642294
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name:
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 2
+  m_Width: 84
+  m_Height: 84
+  m_CompleteImageSize: 28224
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  image data: 28224
+  _typelessdata: cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00cdcdcd00
+  m_StreamData:
+    offset: 0
+    size: 0
+    path:
 --- !u!1 &2003851552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 574181088683677198, guid: c4155bbdaad8cfc418a4baaf3e52210c,
@@ -16967,8 +16930,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c2d849944c49f439c61bc282acabbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inheritScroll: 1
   scrollRate: 3
   speed: 2
@@ -17350,7 +17313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2002865979, guid: c4d18286a24b6844faa5a798c3e8127e, type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4d18286a24b6844faa5a798c3e8127e, type: 3}
@@ -17800,6 +17763,135 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8301599269962950525}
   m_Mesh: {fileID: 3270788157207286617, guid: 0dd42feae3be0c149b0149bab182fd71, type: 3}
+--- !u!1001 &4343336523518756644
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4343336522083992452, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_Name
+      value: Player (Submarine)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992450, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522083992448, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: submarineOBJ
+      value:
+      objectReference: {fileID: 5193909397193364310}
+    - target: {fileID: 4343336522083992455, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: submarineOBJ
+      value:
+      objectReference: {fileID: 5193909397193364310}
+    - target: {fileID: 4343336522083992455, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: subSettings
+      value:
+      objectReference: {fileID: 847314152}
+    - target: {fileID: 4343336522083992453, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: subSettings
+      value:
+      objectReference: {fileID: 847314152}
+    - target: {fileID: 4343336523655873102, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 1209461858}
+    - target: {fileID: 4343336523655873102, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522985129755, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value:
+      objectReference: {fileID: 1173400405}
+    - target: {fileID: 4343336522985129755, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_Sprite
+      value:
+      objectReference: {fileID: 456101730}
+    - target: {fileID: 4343336522985129755, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343336522924546586, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_Mesh
+      value:
+      objectReference: {fileID: 192034262}
+    - target: {fileID: 4343336524020739009, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: aimTurretScript
+      value:
+      objectReference: {fileID: 5193909397193364311}
+    - target: {fileID: 4343336523988023273, guid: a5c6ad936392a974bb5b30549c9cb1f2,
+        type: 3}
+      propertyPath: m_Mesh
+      value:
+      objectReference: {fileID: 1841475058}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5c6ad936392a974bb5b30549c9cb1f2, type: 3}
 --- !u!33 &4407865716171133198
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17888,12 +17980,12 @@ PrefabInstance:
     - target: {fileID: 7074220555113948516, guid: 9070eef1f102b1648a38de11e41a9c29,
         type: 3}
       propertyPath: subController
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     - target: {fileID: 7074220555113948516, guid: 9070eef1f102b1648a38de11e41a9c29,
         type: 3}
       propertyPath: player
-      value: 
+      value:
       objectReference: {fileID: 1788658848}
     - target: {fileID: 7074220554742360737, guid: 9070eef1f102b1648a38de11e41a9c29,
         type: 3}
@@ -17972,8 +18064,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e2df1ae9962b104597d294835b72e15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _camera: {fileID: 622635585}
   _inputCanvas: {fileID: 0}
   _submarineSprite: {fileID: 1788658848}
@@ -18463,12 +18555,12 @@ PrefabInstance:
     - target: {fileID: 7074220555113948516, guid: 9070eef1f102b1648a38de11e41a9c29,
         type: 3}
       propertyPath: subController
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     - target: {fileID: 7074220555113948516, guid: 9070eef1f102b1648a38de11e41a9c29,
         type: 3}
       propertyPath: player
-      value: 
+      value:
       objectReference: {fileID: 1788658848}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9070eef1f102b1648a38de11e41a9c29, type: 3}
@@ -18496,7 +18588,7 @@ PrefabInstance:
     - target: {fileID: 7178439748054306675, guid: e698bd9ab2860f742af3833f0b6cd644,
         type: 3}
       propertyPath: m_Name
-      value: Mine (enemy)
+      value: w
       objectReference: {fileID: 0}
     - target: {fileID: 7178439748054306675, guid: e698bd9ab2860f742af3833f0b6cd644,
         type: 3}
@@ -18566,7 +18658,7 @@ PrefabInstance:
     - target: {fileID: 7178439748054306673, guid: e698bd9ab2860f742af3833f0b6cd644,
         type: 3}
       propertyPath: subSettings
-      value: 
+      value:
       objectReference: {fileID: 847314152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e698bd9ab2860f742af3833f0b6cd644, type: 3}
@@ -18607,6 +18699,85 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1001 &7317983291207697334
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7317983289842373043, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_Name
+      value: Scrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373043, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -58.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373041, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317983289842373052, guid: 519e44d7816efd34880ecb70c88f511b,
+        type: 3}
+      propertyPath: subSettings
+      value:
+      objectReference: {fileID: 847314152}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 519e44d7816efd34880ecb70c88f511b, type: 3}
 --- !u!23 &7619627291826627830
 MeshRenderer:
   m_ObjectHideFlags: 0

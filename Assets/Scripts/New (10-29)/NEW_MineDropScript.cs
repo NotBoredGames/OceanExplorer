@@ -11,6 +11,7 @@ public class NEW_MineDropScript : MonoBehaviour
     GameObject playerMine;
 
     [SerializeField]
+    string subControllerString = "Submarine Info Controller";
     SubmarineSettingsScript subSettings;
 
     bool canFire = true;
@@ -24,6 +25,9 @@ public class NEW_MineDropScript : MonoBehaviour
     // Set variables here that will only ever be set once at start of game
     void Awake()
     {
+        subSettings = GameObject.Find(subControllerString).GetComponent<SubmarineSettingsScript>();
+        if (subSettings == null)
+            Debug.LogError("[[NEW_MineDropScript]] Could not find subSettings!");
         mineSpeed = subSettings.GetMineSpeed();
     }
 

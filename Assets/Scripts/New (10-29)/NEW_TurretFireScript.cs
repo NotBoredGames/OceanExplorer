@@ -17,6 +17,7 @@ public class NEW_TurretFireScript : MonoBehaviour
     Transform turretReference;
 
     [SerializeField]
+    string subControllerString = "Submarine Info Controller";
     SubmarineSettingsScript subSettings;
 
     [SerializeField]
@@ -29,8 +30,12 @@ public class NEW_TurretFireScript : MonoBehaviour
 
     // Start is called before the first frame update
     // Set variables here that will only ever be set once at start of game
-    void Start()
+    void Awake()
     {
+        subSettings = GameObject.Find(subControllerString).GetComponent<SubmarineSettingsScript>();
+        if (subSettings == null)
+            Debug.LogError("[[NEW_TurretFireScript]] Cannot find subSettings!");
+
         aimScript = submarineOBJ.GetComponent<NEW_TurretAimScript>();
 
         if (aimScript == null)
