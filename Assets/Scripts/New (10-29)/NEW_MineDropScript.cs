@@ -24,6 +24,9 @@ public class NEW_MineDropScript : MonoBehaviour
     [SerializeField]
     public AudioClip mineBeep;
 
+    [SerializeField]
+    public AudioClip mineExplosion_sound;
+
 
     // Start is called before the first frame update
     // Set variables here that will only ever be set once at start of game
@@ -96,6 +99,7 @@ public class NEW_MineDropScript : MonoBehaviour
     }
     IEnumerator DetonateMine()
     {
+        SoundManagerScript.instance.PlaySingle(mineExplosion_sound);
         droppedMine.GetComponent<PlayerMineCollisionScript>().Detonate();
         yield return null;
     }
