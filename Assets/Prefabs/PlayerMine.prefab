@@ -137,6 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subSettings: {fileID: 0}
-  mineExplosion: {fileID: 0}
-  mineExplosion_sound: {fileID: 8300000, guid: 4fcb3b0119919b946960c79f2fa308ba, type: 3}
   explosionRadius: 10
