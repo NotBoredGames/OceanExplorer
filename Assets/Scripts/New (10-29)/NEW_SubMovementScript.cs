@@ -10,10 +10,11 @@ public class NEW_SubMovementScript : MonoBehaviour
     GameObject submarineOBJ;
     [SerializeField]
     Transform spriteGunPivot;
+    
     [SerializeField]
-    float moveAcceleration = 20.0f;
-    [SerializeField]
-    float maxSpeed = 15.0f;
+    float maxSpeed;
+	[SerializeField]
+    float moveAcceleration;
     [SerializeField]
     string subCenterString = "Sub_Center";
     [SerializeField]
@@ -30,7 +31,9 @@ public class NEW_SubMovementScript : MonoBehaviour
 
     void Awake()
     {
+		maxSpeed=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().subSpeed;
         body = GetComponent<Rigidbody2D>();
+		moveAcceleration=maxSpeed+10f;
     }
 
     void Update()

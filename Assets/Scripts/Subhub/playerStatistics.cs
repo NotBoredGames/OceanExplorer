@@ -23,7 +23,28 @@ public class playerStatistics : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		//load the values
+		//GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>.
+		if(GameObject.Find("Submarine Info Controller")){
+		   playerScrapAmount=SubmarineSettingsScript.currentScrap;
+		   
+			
+		   healthAmt=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().maxHP;
+		   engineerLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().eLvl;
+		   
+		   bombAmt=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().maxMines;
+		   weaponsmithLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().wLvl;
+		   
+		   subSpeed=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().subSpeed;
+		   navigatorLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().nLvl;
+		   
+		   scrapIncrease=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().scrapIncrease;
+		   scrapperLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().sLvl;
+		   
+		   damageAmt=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().currentBulletDamage;
+		   marineBiologistLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().mbLvl;
+		}
+		else{
+		//load default values
        	   healthAmt=3;
 		   engineerLevel=0;
 		   
@@ -38,6 +59,7 @@ public class playerStatistics : MonoBehaviour
 		   
 		   damageAmt=1;
 		   marineBiologistLevel=0;
+		}
     }
 
     // Update is called once per frame
