@@ -9,6 +9,10 @@ public class MineEnemyExplosion : MonoBehaviour
     GameObject mineExplosion;
 
     [SerializeField]
+    public AudioClip Enemy_mineExplosion_sound;
+
+
+    [SerializeField]
     [Range(0, 50)]
     float explosionRadius = 10;
 
@@ -48,6 +52,7 @@ public class MineEnemyExplosion : MonoBehaviour
 
     public void Detonate(Vector2 _point)
     {
+        SoundManagerScript.instance.PlaySingle(Enemy_mineExplosion_sound);
         GameObject _mineExplosion = Instantiate(mineExplosion);
         _mineExplosion.name = this.gameObject.name + " Explosion";
         _mineExplosion.transform.position = _point;

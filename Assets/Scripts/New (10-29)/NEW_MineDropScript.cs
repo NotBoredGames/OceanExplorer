@@ -21,6 +21,10 @@ public class NEW_MineDropScript : MonoBehaviour
 
     GameObject droppedMine;
 
+    [SerializeField]
+    public AudioClip mineBeep;
+
+
     // Start is called before the first frame update
     // Set variables here that will only ever be set once at start of game
     void Awake()
@@ -64,6 +68,7 @@ public class NEW_MineDropScript : MonoBehaviour
     {
         if (canFire && currMines > 0)
         {
+            SoundManagerScript.instance.PlaySingle(mineBeep);
             canFire = false;
             currMines -= 1;
             subSettings.SetCurrentMines(currMines);
@@ -86,6 +91,7 @@ public class NEW_MineDropScript : MonoBehaviour
 
             yield return new WaitForSeconds(mineDelay);
             canFire = true;
+
         }
     }
     IEnumerator DetonateMine()
