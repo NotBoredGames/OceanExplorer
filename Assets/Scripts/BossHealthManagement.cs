@@ -97,13 +97,18 @@ public class BossHealthManagement : MonoBehaviour
             }
         }
 
-        StartCoroutine(WaitThenLoad(10, "SubHub"));
+        StartCoroutine(WaitThenLoad(10));
     }
 
-    IEnumerator WaitThenLoad(float t, string levelName)
+    IEnumerator WaitThenLoad(float t)
     {
         yield return new WaitForSeconds(t);
-        SceneManager.LoadScene(levelName);
+
+        if (Globals.lastSubLevelPlayed != 3)
+            SceneManager.LoadScene("SubHub");
+        else
+            SceneManager.LoadScene("Victory");
+
     }
 
     public void DestroyKraken()
