@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrap: {fileID: 5548790511834475519, guid: 316f52fe5747b054683763ffbd673c95, type: 3}
   HP: 2
   subControllerString: Submarine Info Controller
 --- !u!1 &8305236594199358391

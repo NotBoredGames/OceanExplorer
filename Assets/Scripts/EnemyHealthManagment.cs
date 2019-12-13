@@ -28,7 +28,8 @@ public class EnemyHealthManagment : MonoBehaviour
         // enemy will be destroyed
         if(HP <= 0)
         {
-            Instantiate(scrap, this.gameObject.transform.position, this.gameObject.transform.rotation);
+            if (scrap != null)
+                Instantiate(scrap, this.gameObject.transform.position, this.gameObject.transform.rotation);
             Destroy(gameObject);
         }
     }
