@@ -180,7 +180,6 @@ MonoBehaviour:
   inheritScroll: 1
   scrollRate: 4
   speed: 8
-  subControllerString: Submarine Info Controller
 --- !u!114 &36058528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f23aa6f7018dac48b51fb193216208b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrap: {fileID: 3470897820871169442, guid: 2e5bcfee2f8be674c9053b4d4e3d95af, type: 3}
   HP: 5
   subControllerString: Submarine Info Controller
 --- !u!1 &7442000650637731840
