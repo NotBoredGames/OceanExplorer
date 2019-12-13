@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subControllerString: Submarine Info Controller
+  Player_hit_sound: {fileID: 8300000, guid: 3d18c841d83b8044b8aeb5e7d566c3ff, type: 3}
   canTakeDamage: 0
 --- !u!95 &4343336522083992460
 Animator:

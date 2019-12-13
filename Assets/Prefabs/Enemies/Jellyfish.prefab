@@ -194,6 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 1
   subControllerString: Submarine Info Controller
+  Enemy_destroy: {fileID: 8300000, guid: 3d18c841d83b8044b8aeb5e7d566c3ff, type: 3}
+  Enemy_damage: {fileID: 0}
 --- !u!1 &3095355441788267476
 GameObject:
   m_ObjectHideFlags: 0

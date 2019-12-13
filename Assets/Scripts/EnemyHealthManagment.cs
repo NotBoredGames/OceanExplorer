@@ -10,6 +10,12 @@ public class EnemyHealthManagment : MonoBehaviour
 
     SubmarineSettingsScript subSettings;
 
+    [SerializeField]
+    public AudioClip Enemy_destroy;
+
+    [SerializeField]
+    public AudioClip Enemy_damage;
+
     void Awake()
     {
         subSettings = GameObject.Find(subControllerString).GetComponent<SubmarineSettingsScript>();
@@ -24,6 +30,8 @@ public class EnemyHealthManagment : MonoBehaviour
         // enemy will be destroyed
         if(HP <= 0)
         {
+
+            SoundManagerScript.instance.PlaySingle(Enemy_destroy);
             Destroy(gameObject);
         }
     }
@@ -35,6 +43,7 @@ public class EnemyHealthManagment : MonoBehaviour
         //if hit by player turret fire
         if (other.gameObject.tag == "PlayerBullet")
         {
+            SoundManagerScript.instance.PlaySingle(Enemy_damage);
             HP -= subSettings.GetBulletDamage();
         }
         // if hit by player mine
@@ -44,3 +53,4 @@ public class EnemyHealthManagment : MonoBehaviour
         }
     }
 }
+

@@ -180,7 +180,6 @@ MonoBehaviour:
   inheritScroll: 1
   scrollRate: 4
   speed: 8
-  subControllerString: Submarine Info Controller
 --- !u!114 &36058528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 5
   subControllerString: Submarine Info Controller
+  Enemy_destroy: {fileID: 8300000, guid: 3d18c841d83b8044b8aeb5e7d566c3ff, type: 3}
+  Enemy_damage: {fileID: 8300000, guid: 12649ec308bbae34a82f7726e1c60917, type: 3}
 --- !u!1 &7442000650637731840
 GameObject:
   m_ObjectHideFlags: 0

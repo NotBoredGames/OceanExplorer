@@ -1342,6 +1342,8 @@ MonoBehaviour:
   scrapCost: 0
   currentValue: 0
   perLevelScrapCost: 100
+  upgrade_sound: {fileID: 8300000, guid: 9e2bbe4dd9e96ff4e8b82efbb4452dc2, type: 3}
+  no_upgrade_sound: {fileID: 8300000, guid: 98e1776418ad2404ab368589e8de44aa, type: 3}
 --- !u!1 &776569365
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,9 +5,12 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class EnemyCollisionScript : MonoBehaviour
 {
-   
+
     [SerializeField]
     string subControllerString = "Submarine Info Controller";
+
+    [SerializeField]
+    public AudioClip Player_hit_sound;
 
     Animator anim;
     SubmarineSettingsScript subSettings;
@@ -44,6 +47,8 @@ public class EnemyCollisionScript : MonoBehaviour
         {
             if (other.gameObject.tag == "Enemy")
             {
+
+                SoundManagerScript.instance.PlaySingle(Player_hit_sound);
                 Destroy(other.gameObject);
                 subSettings.SetCurrentHP(subSettings.GetCurrentHP() - 1);
                 StartCoroutine(DamageAnimation());
@@ -53,6 +58,8 @@ public class EnemyCollisionScript : MonoBehaviour
                 AttackingTentacleScript attackScript = other.gameObject.GetComponent<AttackingTentacleScript>();
                 if (attackScript != null)
                 {
+
+                    SoundManagerScript.instance.PlaySingle(Player_hit_sound);
                     StartCoroutine(DamageAnimation());
                 }
             }
