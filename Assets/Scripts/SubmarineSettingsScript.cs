@@ -67,28 +67,15 @@ public class SubmarineSettingsScript : MonoBehaviour
     public static int currentScrap = 0;
 
     [BoxGroup("Other Settings")]
-    [ShowInInspector]
-    public static int scrapCollectionMultiplier = 1;
-
-
-    // for storing if a crew member has been found yet
-    // may want to store elsewhere for save system
-    public static bool foundEngineer;
-    public static bool foundWeaponsmith;
-    public static bool foundScrapper;
-    public static bool foundMarineBio;
-    public static bool foundScrap;
+    public int scrapCollectionMultiplier = 1;
 	
-	
-	public int eLvl;
-	public int wLvl;
-	public int nLvl;
-	public int sLvl;
-	public int mbLvl;
+	public int engineerLvl;
+	public int weaponsmithLvl;
+	public int navigatorLvl;
+	public int scrapperLvl;
+	public int biologistLvl;
 	
 	public int subSpeed;
-	public int scrapIncrease;
-
 
     // Start is called before the first frame update
     void Start()
@@ -115,14 +102,13 @@ public class SubmarineSettingsScript : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
 		
 				
-		eLvl=0;
-		wLvl=0;
-		nLvl=0;
-		sLvl=0;
-		mbLvl=0;
+		engineerLvl=0;
+		weaponsmithLvl=0;
+		navigatorLvl=0;
+		scrapperLvl=0;
+		biologistLvl=0;
 		
 		subSpeed=25;
-		scrapIncrease=0;
             
     }
 
@@ -245,6 +231,11 @@ public class SubmarineSettingsScript : MonoBehaviour
     public int GetMaxHP()
     {
         return maxHP;
+    }
+
+    public int GetScrapMultiplier()
+    {
+        return scrapCollectionMultiplier;
     }
     /*
     // sets the current amount of scrap after player picks it up

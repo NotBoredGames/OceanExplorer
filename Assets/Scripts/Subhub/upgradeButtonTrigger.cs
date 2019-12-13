@@ -115,7 +115,7 @@ public class upgradeButtonTrigger : MonoBehaviour
 				dialog.name=GameObject.Find("U1Name").GetComponent<UnityEngine.UI.Text>().text;
 				dialog.sentences=new string[1];
 				dialog.sentences[0]="Upgrade Purchased!";
-				GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().subSpeed+=1;
+				GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().subSpeed+=5;
 			    GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().navigatorLevel+=1;
 				currUpgradeLevel = GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().navigatorLevel;
 				GameObject.Find("U1T1Box").GetComponent<Image>().enabled=false;
@@ -133,7 +133,7 @@ public class upgradeButtonTrigger : MonoBehaviour
 			}
 		}
 		else if(GameObject.Find("U1Name").GetComponent<UnityEngine.UI.Text>().text == "Increase Scrap"){
-			currentValue= GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapIncrease;
+			currentValue= GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapMultiplier;
 			currUpgradeLevel = GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapperLevel;
 			scrapCost=(currUpgradeLevel+1)*perLevelScrapCost;
 			if(currUpgradeLevel==3){
@@ -151,7 +151,7 @@ public class upgradeButtonTrigger : MonoBehaviour
 				dialog.name=GameObject.Find("U1Name").GetComponent<UnityEngine.UI.Text>().text;
 				dialog.sentences=new string[1];
 				dialog.sentences[0]="Upgrade Purchased!";
-				GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapIncrease+=5;
+				GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapMultiplier+=1;
 			    GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapperLevel+=1;
 				currUpgradeLevel = GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapperLevel;
 				GameObject.Find("U1T1Box").GetComponent<Image>().enabled=false;
@@ -284,7 +284,7 @@ public class upgradeButtonTrigger : MonoBehaviour
 				dialog.sentences[0]="MAX LEVEL";
 			}
 			else{
-				dialog.sentences[0]="Increases sub speed to "+(currentValue+1)+". Cost: "+scrapCost+" Scrap";
+				dialog.sentences[0]="Increases sub speed by 25%. Cost: "+scrapCost+" Scrap";
 			}
 			FindObjectOfType<DialogManager>().StartDialog(dialog);
 			GameObject.Find("U1T1Box").GetComponent<Image>().enabled=false;
@@ -301,7 +301,7 @@ public class upgradeButtonTrigger : MonoBehaviour
 			}
 		}
 		else if(GameObject.Find("U1Name").GetComponent<UnityEngine.UI.Text>().text == "Increase Scrap"){
-			currentValue= GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapIncrease;
+			currentValue= GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapMultiplier;
 			currUpgradeLevel = GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapperLevel;
 			scrapCost=(currUpgradeLevel+1)*perLevelScrapCost;
 			dialog.name=GameObject.Find("U1Name").GetComponent<UnityEngine.UI.Text>().text;
@@ -310,7 +310,7 @@ public class upgradeButtonTrigger : MonoBehaviour
 				dialog.sentences[0]="MAX LEVEL";
 			}
 			else{
-				dialog.sentences[0]="Increases bonus scrap enemies drop to "+(currentValue+5)+". Cost: "+scrapCost+" Scrap";
+				dialog.sentences[0]="Muliplies the default amount of scrap recovered by "+(currentValue+1)+". Cost: "+scrapCost+" Scrap";
 			}
 			FindObjectOfType<DialogManager>().StartDialog(dialog);
 			GameObject.Find("U1T1Box").GetComponent<Image>().enabled=false;

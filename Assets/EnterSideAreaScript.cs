@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnterSideAreaScript : MonoBehaviour
 {
+    /*
     public GameObject sideArea;
     public GameObject engineer;
     public GameObject weaponsmith;
@@ -79,6 +80,7 @@ public class EnterSideAreaScript : MonoBehaviour
         }
 
     }
+    */
 
     
 }

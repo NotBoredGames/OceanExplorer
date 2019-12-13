@@ -20,6 +20,8 @@ public class HealthManagment : MonoBehaviour
 
         if (subSettings == null)
             Debug.LogError("[[HealthManagement]] Script on GameObject " + this.gameObject.name + " unable to find SubmarineSettingsScript!");
+
+        StartCoroutine(PlayerDead());
     }
 
     // player takes damage when hit by enemy mine explosion

@@ -15,33 +15,35 @@ public class playerStatistics : MonoBehaviour
 	public int subSpeed;
 	public int navigatorLevel;
 	
-	public int scrapIncrease;
+	public int scrapMultiplier;
 	public int scrapperLevel;
 	
 	public int damageAmt;
 	public int marineBiologistLevel;
+
+    static string subControllerString = "Submarine Info Controller";
     // Start is called before the first frame update
     void Start()
     {
-		//GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>.
-		if(GameObject.Find("Submarine Info Controller")){
+        GameObject subController = GameObject.Find(subControllerString);
+		if(GameObject.Find(subControllerString)){
 		   playerScrapAmount=SubmarineSettingsScript.currentScrap;
 		   
 			
-		   healthAmt=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().maxHP;
-		   engineerLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().eLvl;
+		   healthAmt=subController.GetComponent<SubmarineSettingsScript>().maxHP;
+		   engineerLevel=subController.GetComponent<SubmarineSettingsScript>().engineerLvl;
 		   
-		   bombAmt=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().maxMines;
-		   weaponsmithLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().wLvl;
+		   bombAmt=subController.GetComponent<SubmarineSettingsScript>().maxMines;
+		   weaponsmithLevel=subController.GetComponent<SubmarineSettingsScript>().weaponsmithLvl;
 		   
-		   subSpeed=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().subSpeed;
-		   navigatorLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().nLvl;
+		   subSpeed=subController.GetComponent<SubmarineSettingsScript>().subSpeed;
+		   navigatorLevel=subController.GetComponent<SubmarineSettingsScript>().navigatorLvl;
 		   
-		   scrapIncrease=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().scrapIncrease;
-		   scrapperLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().sLvl;
+		   scrapMultiplier=subController.GetComponent<SubmarineSettingsScript>().scrapCollectionMultiplier;
+		   scrapperLevel=subController.GetComponent<SubmarineSettingsScript>().scrapperLvl;
 		   
-		   damageAmt=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().currentBulletDamage;
-		   marineBiologistLevel=GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().mbLvl;
+		   damageAmt=subController.GetComponent<SubmarineSettingsScript>().currentBulletDamage;
+		   marineBiologistLevel=subController.GetComponent<SubmarineSettingsScript>().biologistLvl;
 		}
 		else{
 		//load default values
@@ -54,7 +56,7 @@ public class playerStatistics : MonoBehaviour
 		   subSpeed=1;
 		   navigatorLevel=0;
 		   
-		   scrapIncrease=0;
+		   scrapMultiplier=0;
 		   scrapperLevel=0;
 		   
 		   damageAmt=1;

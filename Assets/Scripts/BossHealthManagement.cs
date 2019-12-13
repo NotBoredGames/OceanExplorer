@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Animator))]
 public class BossHealthManagement : MonoBehaviour
@@ -95,11 +96,19 @@ public class BossHealthManagement : MonoBehaviour
                 r2d.constraints = RigidbodyConstraints2D.None;
             }
         }
+
+        StartCoroutine(WaitThenLoad(10, "SubHub"));
+    }
+
+    IEnumerator WaitThenLoad(float t, string levelName)
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene(levelName);
     }
 
     public void DestroyKraken()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
         Globals.LevelOutro(1);
     }
 }

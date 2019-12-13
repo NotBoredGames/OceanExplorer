@@ -13,7 +13,7 @@ public class changeFoundTextScript : MonoBehaviour
 
     }
 
-
+    /*
     void Update()
     {
         // once all of the crew members have been found change 
@@ -25,4 +25,5 @@ public class changeFoundTextScript : MonoBehaviour
         }
 
     }
+    */
 }

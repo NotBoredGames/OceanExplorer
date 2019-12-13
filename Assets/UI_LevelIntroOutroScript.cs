@@ -23,8 +23,8 @@ public class UI_LevelIntroOutroScript : MonoBehaviour
 
         if (FindObjectsOfType(GetType()).Length > 1)
             Destroy(this.gameObject);
-        else
-            DontDestroyOnLoad(this.gameObject);
+        //else
+        //   DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame

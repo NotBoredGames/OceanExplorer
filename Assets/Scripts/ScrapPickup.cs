@@ -26,7 +26,7 @@ public class ScrapPickup : MonoBehaviour
         {
 
             // adds scrap to total
-            SubmarineSettingsScript.currentScrap += 10; // for upgrades can add a multiplier 
+            SubmarineSettingsScript.currentScrap += GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().scrapCollectionMultiplier * 10; // for upgrades can add a multiplier 
             Destroy(this.gameObject);                 // or create other prefab objs that hold more scrap pieces
 
         }

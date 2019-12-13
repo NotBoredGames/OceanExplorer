@@ -616,6 +616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activator: {fileID: 7992560351168368640}
   scriptActivatorName: Script Activator Trigger
+  bossMusic: {fileID: 8300000, guid: 16a48bf7205ab67408b531cc40ad077b, type: 3}
 --- !u!114 &5658263151344223945
 MonoBehaviour:
   m_ObjectHideFlags: 0

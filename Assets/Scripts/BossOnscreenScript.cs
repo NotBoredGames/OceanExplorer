@@ -11,6 +11,9 @@ public class BossOnscreenScript : MonoBehaviour
     [SerializeField]
     string scriptActivatorName;
 
+    [SerializeField]
+    AudioClip bossMusic;
+
     Collider2D scriptActivator;
 
     float t = 5;
@@ -55,5 +58,13 @@ public class BossOnscreenScript : MonoBehaviour
     void ShortWait()
     {
         t -= Time.deltaTime;
+    }
+
+    public void PlayMusic()
+    {
+        SoundManagerScript audioScript =  GameObject.Find("SoundManager").GetComponent<SoundManagerScript>();
+
+        if (audioScript)
+            audioScript.PlayMusic(bossMusic);
     }
 }

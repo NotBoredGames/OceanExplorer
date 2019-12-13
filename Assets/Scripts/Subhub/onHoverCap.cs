@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class onHoverCap : MonoBehaviour
 {
     private Color startcolor;
     public GameObject textToShow;
     //public DialogTrigger dialogToPlay;
+
+    static string subControllerString = "Submarine Info Controller";
+    static string upgradeControllerString = "PlayerUpgradeController";
        
     void OnMouseEnter()
     {
@@ -27,25 +31,28 @@ public class onHoverCap : MonoBehaviour
     }
     void OnMouseDown()
     {
-		if(GameObject.Find("Submarine Info Controller")){
-		   SubmarineSettingsScript.currentScrap=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().playerScrapAmount;
-		   
+
+        GameObject subController = GameObject.Find(subControllerString);
+        GameObject upgradeController = GameObject.Find(upgradeControllerString);
+		if(subController && upgradeController){
+		   SubmarineSettingsScript.currentScrap=upgradeController.GetComponent<playerStatistics>().playerScrapAmount;
 			
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().maxHP=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().healthAmt;
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().eLvl=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().engineerLevel;
+		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().maxHP=upgradeController.GetComponent<playerStatistics>().healthAmt;
+		   subController.GetComponent<SubmarineSettingsScript>().engineerLvl=upgradeController.GetComponent<playerStatistics>().engineerLevel;
 		   
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().maxMines=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().bombAmt;
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().wLvl=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().weaponsmithLevel;
+		   subController.GetComponent<SubmarineSettingsScript>().maxMines=upgradeController.GetComponent<playerStatistics>().bombAmt;
+		   subController.GetComponent<SubmarineSettingsScript>().weaponsmithLvl=upgradeController.GetComponent<playerStatistics>().weaponsmithLevel;
 		   
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().subSpeed=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().subSpeed;
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().nLvl=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().navigatorLevel;
+		   subController.GetComponent<SubmarineSettingsScript>().subSpeed=upgradeController.GetComponent<playerStatistics>().subSpeed;
+		   subController.GetComponent<SubmarineSettingsScript>().navigatorLvl=upgradeController.GetComponent<playerStatistics>().navigatorLevel;
 		   
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().scrapIncrease=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapIncrease;
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().sLvl=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().scrapperLevel;
+		   subController.GetComponent<SubmarineSettingsScript>().scrapCollectionMultiplier =upgradeController.GetComponent<playerStatistics>().scrapMultiplier;
+		   subController.GetComponent<SubmarineSettingsScript>().scrapperLvl=upgradeController.GetComponent<playerStatistics>().scrapperLevel;
 		   
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().currentBulletDamage=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().damageAmt;
-		   GameObject.Find("Submarine Info Controller").GetComponent<SubmarineSettingsScript>().mbLvl=GameObject.Find("PlayerUpgradeController").GetComponent<playerStatistics>().marineBiologistLevel;
-		   UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+		   subController.GetComponent<SubmarineSettingsScript>().currentBulletDamage=upgradeController.GetComponent<playerStatistics>().damageAmt;
+		   subController.GetComponent<SubmarineSettingsScript>().biologistLvl=upgradeController.GetComponent<playerStatistics>().marineBiologistLevel;
+
+		   SceneManager.LoadScene("Level " + (Globals.lastSubLevelPlayed + 1));
 		}
     }
 }
