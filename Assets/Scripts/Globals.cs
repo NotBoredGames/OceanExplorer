@@ -71,8 +71,8 @@ public class Globals : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Escape))
             Application.Quit();
 
-        if (Input.GetKeyUp(KeyCode.R))
-            Application.LoadLevel(Application.loadedLevel);
+        //if (Input.GetKeyUp(KeyCode.R))
+            //Application.LoadLevel(Application.loadedLevel);
 
         if (Input.GetKeyUp(KeyCode.P))
         {
